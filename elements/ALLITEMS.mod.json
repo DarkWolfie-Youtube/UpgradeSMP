@@ -1,0 +1,11 @@
+{
+  "_fv": 39,
+  "_type": "tab",
+  "definition": {
+    "name": "ALLITEMS",
+    "icon": {
+      "value": "Blocks.STONE#0"
+    },
+    "showSearch": false
+  }
+}

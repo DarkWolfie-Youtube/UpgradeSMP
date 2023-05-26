@@ -1,0 +1,109 @@
+{
+  "mod_elements": [
+    {
+      "name": "ALLITEMS",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "allitems",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "ReinforcedIronOre",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_iron_ore",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/block/ReinforcedIronOreBlock.java",
+          "src/main/resources/assets/upgradesmpmod/blockstates/reinforced_iron_ore.json",
+          "src/main/resources/assets/upgradesmpmod/models/block/reinforced_iron_ore.json",
+          "src/main/java/com/darksmp/upgradesmpmod/world/features/ores/ReinforcedIronOreFeature.java",
+          "src/main/resources/assets/upgradesmpmod/models/item/reinforced_iron_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "Reinforcediron",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforcediron",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/item/ReinforcedironItem.java",
+          "src/main/resources/assets/upgradesmpmod/models/item/reinforcediron.json"
+        ]
+      }
+    },
+    {
+      "name": "ReinforcedIronOreSmelt",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_iron_ore_smelt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/upgradesmpmod/recipes/reinforced_iron_ore_smelt.json"
+        ]
+      }
+    },
+    {
+      "name": "ReinforcedIronArmor",
+      "type": "armor",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_iron_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/upgradesmpmod/models/item/reinforced_iron_armor_leggings.json",
+          "src/main/java/com/darksmp/upgradesmpmod/item/ReinforcedIronArmorItem.java",
+          "src/main/resources/assets/upgradesmpmod/models/item/reinforced_iron_armor_chestplate.json",
+          "src/main/resources/assets/upgradesmpmod/models/item/reinforced_iron_armor_boots.json",
+          "src/main/resources/assets/upgradesmpmod/models/item/reinforced_iron_armor_helmet.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.upgradesmpmod.reinforced_iron_armor_chestplate": "Reinforced Iron Chestplate",
+      "item.upgradesmpmod.reinforced_iron_armor_helmet": "Reinforced Iron Helmet",
+      "block.upgradesmpmod.reinforced_iron_ore": "Reinforced Iron Ore",
+      "item.upgradesmpmod.reinforced_iron_armor_boots": "Reinforced Iron Boots",
+      "item.upgradesmpmod.reinforced_iron_armor_leggings": "Reinforced Iron Leggings",
+      "item.upgradesmpmod.reinforcediron": "Reinforced Iron Shard",
+      "itemGroup.upgradesmpmod.allitems": "All Upgrade SMP Items"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "upgradesmpmod",
+    "modName": "Upgrade SMP mod",
+    "version": "1.0.0",
+    "author": "adeeb, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "fabric-1.19.2",
+    "modElementsPackage": "com.darksmp.upgradesmpmod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300110610
+}

@@ -1,0 +1,20 @@
+{
+  "_fv": 39,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "xpReward": 66.0,
+    "cookingTime": 120,
+    "recipeRetstackSize": 1,
+    "group": "reinforced_ore_1",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:ReinforcedIronOre"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:Reinforcediron"
+    },
+    "name": "reinforced_iron_ore_smelt",
+    "namespace": "mod"
+  }
+}
