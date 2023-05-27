@@ -28,11 +28,11 @@ import java.util.Collections;
 
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModBlocks;
 
-public class ReinforcedIronOreBlock extends Block {
-	public static BlockBehaviour.Properties PROPERTIES = FabricBlockSettings.of(Material.STONE).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE).strength(60f, 10f).requiresCorrectToolForDrops();
+public class ReinforcedIronOre2OreBlock extends Block {
+	public static BlockBehaviour.Properties PROPERTIES = FabricBlockSettings.of(Material.STONE).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE).strength(3f, 5f).requiresCorrectToolForDrops();
 	public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.AXIS;
 
-	public ReinforcedIronOreBlock() {
+	public ReinforcedIronOre2OreBlock() {
 		super(PROPERTIES);
 		this.registerDefaultState(this.stateDefinition.any().setValue(AXIS, Direction.Axis.Y));
 	}
@@ -74,6 +74,6 @@ public class ReinforcedIronOreBlock extends Block {
 
 	@Environment(EnvType.CLIENT)
 	public static void clientInit() {
-		BlockRenderLayerMap.INSTANCE.putBlock(UpgradesmpmodModBlocks.REINFORCED_IRON_ORE, RenderType.solid());
+		BlockRenderLayerMap.INSTANCE.putBlock(UpgradesmpmodModBlocks.REINFORCED_IRON_ORE_2_ORE, RenderType.solid());
 	}
 }

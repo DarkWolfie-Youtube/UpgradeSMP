@@ -11,23 +11,6 @@
       }
     },
     {
-      "name": "ReinforcedIronOre",
-      "type": "block",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "reinforced_iron_ore",
-      "metadata": {
-        "files": [
-          "src/main/java/com/darksmp/upgradesmpmod/block/ReinforcedIronOreBlock.java",
-          "src/main/resources/assets/upgradesmpmod/blockstates/reinforced_iron_ore.json",
-          "src/main/resources/assets/upgradesmpmod/models/block/reinforced_iron_ore.json",
-          "src/main/java/com/darksmp/upgradesmpmod/world/features/ores/ReinforcedIronOreFeature.java",
-          "src/main/resources/assets/upgradesmpmod/models/item/reinforced_iron_ore.json"
-        ]
-      }
-    },
-    {
       "name": "Reinforcediron",
       "type": "item",
       "sortid": 1,
@@ -38,18 +21,6 @@
         "files": [
           "src/main/java/com/darksmp/upgradesmpmod/item/ReinforcedironItem.java",
           "src/main/resources/assets/upgradesmpmod/models/item/reinforcediron.json"
-        ]
-      }
-    },
-    {
-      "name": "ReinforcedIronOreSmelt",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "reinforced_iron_ore_smelt",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/upgradesmpmod/recipes/reinforced_iron_ore_smelt.json"
         ]
       }
     },
@@ -69,18 +40,118 @@
           "src/main/resources/assets/upgradesmpmod/models/item/reinforced_iron_armor_helmet.json"
         ]
       }
+    },
+    {
+      "name": "ReinforcedIronOre2Ore",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_iron_ore_2_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/upgradesmpmod/models/item/reinforced_iron_ore_2_ore.json",
+          "src/main/resources/assets/upgradesmpmod/blockstates/reinforced_iron_ore_2_ore.json",
+          "src/main/java/com/darksmp/upgradesmpmod/world/features/ores/ReinforcedIronOre2OreFeature.java",
+          "src/main/resources/assets/upgradesmpmod/models/block/reinforced_iron_ore_2_ore.json",
+          "src/main/java/com/darksmp/upgradesmpmod/block/ReinforcedIronOre2OreBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "SmeltReinforcedIron",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelt_reinforced_iron",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/upgradesmpmod/recipes/smelt_reinforced_iron.json"
+        ]
+      }
+    },
+    {
+      "name": "Shit1",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shit_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/upgradesmpmod/recipes/shit_1.json"
+        ]
+      }
+    },
+    {
+      "name": "Shit2",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shit_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/upgradesmpmod/recipes/shit_2.json"
+        ]
+      }
+    },
+    {
+      "name": "Shit3",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shit_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/upgradesmpmod/recipes/shit_3.json"
+        ]
+      }
+    },
+    {
+      "name": "Shit4",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shit_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/upgradesmpmod/recipes/shit_4.json"
+        ]
+      }
+    },
+    {
+      "name": "FuckinLilac",
+      "type": "plant",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuckin_lilac",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/world/features/plants/FuckinLilacFeature.java",
+          "src/main/resources/assets/upgradesmpmod/models/block/fuckin_lilac.json",
+          "src/main/resources/assets/upgradesmpmod/models/item/fuckin_lilac.json",
+          "src/main/java/com/darksmp/upgradesmpmod/block/FuckinLilacBlock.java",
+          "src/main/resources/assets/upgradesmpmod/blockstates/fuckin_lilac.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.upgradesmpmod.reinforced_iron_ore_2_ore": "Reinforced Iron Ore",
       "item.upgradesmpmod.reinforced_iron_armor_chestplate": "Reinforced Iron Chestplate",
       "item.upgradesmpmod.reinforced_iron_armor_helmet": "Reinforced Iron Helmet",
-      "block.upgradesmpmod.reinforced_iron_ore": "Reinforced Iron Ore",
       "item.upgradesmpmod.reinforced_iron_armor_boots": "Reinforced Iron Boots",
       "item.upgradesmpmod.reinforced_iron_armor_leggings": "Reinforced Iron Leggings",
       "item.upgradesmpmod.reinforcediron": "Reinforced Iron Shard",
+      "block.upgradesmpmod.fuckin_lilac": "Fuckin Lilac",
       "itemGroup.upgradesmpmod.allitems": "All Upgrade SMP Items"
     }
   },

@@ -1,9 +1,10 @@
 {
+  "block.upgradesmpmod.reinforced_iron_ore_2_ore": "Reinforced Iron Ore",
   "item.upgradesmpmod.reinforced_iron_armor_chestplate": "Reinforced Iron Chestplate",
   "item.upgradesmpmod.reinforced_iron_armor_helmet": "Reinforced Iron Helmet",
-  "block.upgradesmpmod.reinforced_iron_ore": "Reinforced Iron Ore",
   "item.upgradesmpmod.reinforced_iron_armor_boots": "Reinforced Iron Boots",
   "item.upgradesmpmod.reinforced_iron_armor_leggings": "Reinforced Iron Leggings",
   "item.upgradesmpmod.reinforcediron": "Reinforced Iron Shard",
+  "block.upgradesmpmod.fuckin_lilac": "Fuckin Lilac",
   "itemGroup.upgradesmpmod.allitems": "All Upgrade SMP Items"
 }

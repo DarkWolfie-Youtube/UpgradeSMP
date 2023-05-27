@@ -7,6 +7,6 @@
     "east": "upgradesmpmod:blocks/reinforced_deepslate_side",
     "south": "upgradesmpmod:blocks/reinforced_deepslate_side",
     "west": "upgradesmpmod:blocks/reinforced_deepslate_side",
-    "particle": "upgradesmpmod:blocks/reinforced_deepslate_side"
+    "particle": "upgradesmpmod:blocks/reinforced_deepslate_bottom"
   }
 }

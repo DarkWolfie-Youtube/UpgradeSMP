@@ -15,19 +15,21 @@ import com.darksmp.upgradesmpmod.UpgradesmpmodMod;
 
 public class UpgradesmpmodModItems {
 	public static Item REINFORCEDIRON;
-	public static Item REINFORCED_IRON_ORE;
 	public static Item REINFORCED_IRON_ARMOR_HELMET;
 	public static Item REINFORCED_IRON_ARMOR_CHESTPLATE;
 	public static Item REINFORCED_IRON_ARMOR_LEGGINGS;
 	public static Item REINFORCED_IRON_ARMOR_BOOTS;
+	public static Item REINFORCED_IRON_ORE_2_ORE;
+	public static Item FUCKIN_LILAC;
 
 	public static void load() {
 		REINFORCEDIRON = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "reinforcediron"), new ReinforcedironItem());
-		REINFORCED_IRON_ORE = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "reinforced_iron_ore"),
-				new BlockItem(UpgradesmpmodModBlocks.REINFORCED_IRON_ORE, new Item.Properties().tab(UpgradesmpmodModTabs.TAB_ALLITEMS)));
 		REINFORCED_IRON_ARMOR_HELMET = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "reinforced_iron_armor_helmet"), new ReinforcedIronArmorItem.Helmet());
 		REINFORCED_IRON_ARMOR_CHESTPLATE = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "reinforced_iron_armor_chestplate"), new ReinforcedIronArmorItem.Chestplate());
 		REINFORCED_IRON_ARMOR_LEGGINGS = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "reinforced_iron_armor_leggings"), new ReinforcedIronArmorItem.Leggings());
 		REINFORCED_IRON_ARMOR_BOOTS = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "reinforced_iron_armor_boots"), new ReinforcedIronArmorItem.Boots());
+		REINFORCED_IRON_ORE_2_ORE = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "reinforced_iron_ore_2_ore"),
+				new BlockItem(UpgradesmpmodModBlocks.REINFORCED_IRON_ORE_2_ORE, new Item.Properties().tab(UpgradesmpmodModTabs.TAB_ALLITEMS)));
+		FUCKIN_LILAC = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "fuckin_lilac"), new BlockItem(UpgradesmpmodModBlocks.FUCKIN_LILAC, new Item.Properties().tab(UpgradesmpmodModTabs.TAB_ALLITEMS)));
 	}
 }

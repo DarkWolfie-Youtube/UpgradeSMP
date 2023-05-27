@@ -34,25 +34,22 @@ import java.util.List;
 
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModBlocks;
 
-public class ReinforcedIronOreFeature extends OreFeature {
-	public static ReinforcedIronOreFeature FEATURE = null;
+public class ReinforcedIronOre2OreFeature extends OreFeature {
+	public static ReinforcedIronOre2OreFeature FEATURE = null;
 	public static Holder<ConfiguredFeature<OreConfiguration, ?>> CONFIGURED_FEATURE = null;
 	public static Holder<PlacedFeature> PLACED_FEATURE = null;
 
 	public static Feature<?> feature() {
-		FEATURE = new ReinforcedIronOreFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("upgradesmpmod:reinforced_iron_ore", FEATURE, new OreConfiguration(ReinforcedIronOreFeatureRuleTest.INSTANCE, UpgradesmpmodModBlocks.REINFORCED_IRON_ORE.defaultBlockState(), 16));
-		PLACED_FEATURE = PlacementUtils.register("upgradesmpmod:reinforced_iron_ore", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(10), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(-61), VerticalAnchor.absolute(0)), BiomeFilter.biome()));
+		FEATURE = new ReinforcedIronOre2OreFeature();
+		CONFIGURED_FEATURE = FeatureUtils.register("upgradesmpmod:reinforced_iron_ore_2_ore", FEATURE, new OreConfiguration(ReinforcedIronOre2OreFeatureRuleTest.INSTANCE, UpgradesmpmodModBlocks.REINFORCED_IRON_ORE_2_ORE.defaultBlockState(), 7));
+		PLACED_FEATURE = PlacementUtils.register("upgradesmpmod:reinforced_iron_ore_2_ore", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(11), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(63)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 
-	public static final Predicate<BiomeSelectionContext> GENERATE_BIOMES = BiomeSelectors.includeByKey(ResourceKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("deep_dark")),
-			ResourceKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("deep_ocean")), ResourceKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("desert")), ResourceKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("forest")),
-			ResourceKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("forest")), ResourceKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("grove")), ResourceKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("ice_spikes")),
-			ResourceKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("jagged_peaks")), ResourceKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("jungle")), ResourceKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("jungle")));
+	public static final Predicate<BiomeSelectionContext> GENERATE_BIOMES = BiomeSelectors.all();
 
-	public ReinforcedIronOreFeature() {
+	public ReinforcedIronOre2OreFeature() {
 		super(OreConfiguration.CODEC);
 	}
 
@@ -67,10 +64,10 @@ public class ReinforcedIronOreFeature extends OreFeature {
 		return super.place(context);
 	}
 
-	private static class ReinforcedIronOreFeatureRuleTest extends RuleTest {
-		static final ReinforcedIronOreFeatureRuleTest INSTANCE = new ReinforcedIronOreFeatureRuleTest();
-		static final com.mojang.serialization.Codec<ReinforcedIronOreFeatureRuleTest> codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
-		static final RuleTestType<ReinforcedIronOreFeatureRuleTest> CUSTOM_MATCH = Registry.register(Registry.RULE_TEST, new ResourceLocation("upgradesmpmod:reinforced_iron_ore_match"), () -> codec);
+	private static class ReinforcedIronOre2OreFeatureRuleTest extends RuleTest {
+		static final ReinforcedIronOre2OreFeatureRuleTest INSTANCE = new ReinforcedIronOre2OreFeatureRuleTest();
+		static final com.mojang.serialization.Codec<ReinforcedIronOre2OreFeatureRuleTest> codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
+		static final RuleTestType<ReinforcedIronOre2OreFeatureRuleTest> CUSTOM_MATCH = Registry.register(Registry.RULE_TEST, new ResourceLocation("upgradesmpmod:reinforced_iron_ore_2_ore_match"), () -> codec);
 
 		public boolean test(BlockState blockAt, RandomSource random) {
 			boolean blockCriteria = false;

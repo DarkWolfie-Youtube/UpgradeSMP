@@ -14,8 +14,8 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "reinforced_deepslate_side",
-    "particleTexture": "reinforced_deepslate_side",
+    "itemTexture": "",
+    "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": false,
@@ -35,8 +35,8 @@
     ],
     "name": "Reinforced Iron Ore",
     "specialInfo": [],
-    "hardness": 60.0,
-    "resistance": 10.0,
+    "hardness": 3.0,
+    "resistance": 5.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -98,7 +98,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 2,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
@@ -120,47 +120,16 @@
     "spawnWorldTypes": [
       "Surface"
     ],
-    "restrictionBiomes": [
-      {
-        "value": "deep_dark"
-      },
-      {
-        "value": "deep_ocean"
-      },
-      {
-        "value": "desert"
-      },
-      {
-        "value": "forest"
-      },
-      {
-        "value": "forest_hills"
-      },
-      {
-        "value": "grove"
-      },
-      {
-        "value": "mutated_ice_flats"
-      },
-      {
-        "value": "jagged_peaks"
-      },
-      {
-        "value": "jungle"
-      },
-      {
-        "value": "jungle_hills"
-      }
-    ],
+    "restrictionBiomes": [],
     "blocksToReplace": [
       {
         "value": "Blocks.STONE"
       }
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 10,
-    "frequencyOnChunk": 16,
-    "minGenerateHeight": -61,
-    "maxGenerateHeight": 0
+    "frequencyPerChunks": 11,
+    "frequencyOnChunk": 7,
+    "minGenerateHeight": 1,
+    "maxGenerateHeight": 63
   }
 }

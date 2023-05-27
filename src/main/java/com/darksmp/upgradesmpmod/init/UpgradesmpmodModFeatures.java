@@ -15,12 +15,14 @@ import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 
 import java.util.function.Predicate;
 
-import com.darksmp.upgradesmpmod.world.features.ores.ReinforcedIronOreFeature;
+import com.darksmp.upgradesmpmod.world.features.plants.FuckinLilacFeature;
+import com.darksmp.upgradesmpmod.world.features.ores.ReinforcedIronOre2OreFeature;
 import com.darksmp.upgradesmpmod.UpgradesmpmodMod;
 
 public class UpgradesmpmodModFeatures {
 	public static void load() {
-		register("reinforced_iron_ore", ReinforcedIronOreFeature.feature(), ReinforcedIronOreFeature.GENERATE_BIOMES, GenerationStep.Decoration.UNDERGROUND_ORES);
+		register("reinforced_iron_ore_2_ore", ReinforcedIronOre2OreFeature.feature(), ReinforcedIronOre2OreFeature.GENERATE_BIOMES, GenerationStep.Decoration.UNDERGROUND_ORES);
+		register("fuckin_lilac", FuckinLilacFeature.feature(), FuckinLilacFeature.GENERATE_BIOMES, GenerationStep.Decoration.VEGETAL_DECORATION);
 	}
 
 	private static void register(String registryName, Feature feature, Predicate<BiomeSelectionContext> biomes, GenerationStep.Decoration genStep) {

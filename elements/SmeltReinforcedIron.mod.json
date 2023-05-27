@@ -3,18 +3,18 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Blasting",
-    "xpReward": 66.0,
-    "cookingTime": 120,
+    "xpReward": 88.0,
+    "cookingTime": 500,
     "recipeRetstackSize": 1,
-    "group": "reinforced_ore_1",
+    "group": "bruh_1",
     "recipeShapeless": false,
     "blastingInputStack": {
-      "value": "CUSTOM:ReinforcedIronOre"
+      "value": "CUSTOM:ReinforcedIronOre2Ore"
     },
     "blastingReturnStack": {
       "value": "CUSTOM:Reinforcediron"
     },
-    "name": "reinforced_iron_ore_smelt",
+    "name": "smelt_reinforced_iron",
     "namespace": "mod"
   }
 }

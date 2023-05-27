@@ -8,17 +8,21 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Registry;
 
-import com.darksmp.upgradesmpmod.block.ReinforcedIronOreBlock;
+import com.darksmp.upgradesmpmod.block.ReinforcedIronOre2OreBlock;
+import com.darksmp.upgradesmpmod.block.FuckinLilacBlock;
 import com.darksmp.upgradesmpmod.UpgradesmpmodMod;
 
 public class UpgradesmpmodModBlocks {
-	public static Block REINFORCED_IRON_ORE;
+	public static Block REINFORCED_IRON_ORE_2_ORE;
+	public static Block FUCKIN_LILAC;
 
 	public static void load() {
-		REINFORCED_IRON_ORE = Registry.register(Registry.BLOCK, new ResourceLocation(UpgradesmpmodMod.MODID, "reinforced_iron_ore"), new ReinforcedIronOreBlock());
+		REINFORCED_IRON_ORE_2_ORE = Registry.register(Registry.BLOCK, new ResourceLocation(UpgradesmpmodMod.MODID, "reinforced_iron_ore_2_ore"), new ReinforcedIronOre2OreBlock());
+		FUCKIN_LILAC = Registry.register(Registry.BLOCK, new ResourceLocation(UpgradesmpmodMod.MODID, "fuckin_lilac"), new FuckinLilacBlock());
 	}
 
 	public static void clientLoad() {
-		ReinforcedIronOreBlock.clientInit();
+		ReinforcedIronOre2OreBlock.clientInit();
+		FuckinLilacBlock.clientInit();
 	}
 }
