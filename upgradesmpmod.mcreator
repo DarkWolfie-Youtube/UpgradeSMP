@@ -139,6 +139,36 @@
           "src/main/resources/assets/upgradesmpmod/blockstates/fuckin_lilac.json"
         ]
       }
+    },
+    {
+      "name": "Welcometohell",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "welcometohell",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/upgradesmpmod/advancements/welcometohell.json"
+        ]
+      }
+    },
+    {
+      "name": "HellAdvancement",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hell_advancement",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/procedures/HellAdvancementProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -146,13 +176,15 @@
   "language_map": {
     "en_us": {
       "block.upgradesmpmod.reinforced_iron_ore_2_ore": "Reinforced Iron Ore",
+      "advancements.welcometohell.descr": "Welcome to the Upgrade SMP. You got this achievement because uyou joined HELL.",
       "item.upgradesmpmod.reinforced_iron_armor_chestplate": "Reinforced Iron Chestplate",
       "item.upgradesmpmod.reinforced_iron_armor_helmet": "Reinforced Iron Helmet",
       "item.upgradesmpmod.reinforced_iron_armor_boots": "Reinforced Iron Boots",
       "item.upgradesmpmod.reinforced_iron_armor_leggings": "Reinforced Iron Leggings",
       "item.upgradesmpmod.reinforcediron": "Reinforced Iron Shard",
       "block.upgradesmpmod.fuckin_lilac": "Fuckin Lilac",
-      "itemGroup.upgradesmpmod.allitems": "All Upgrade SMP Items"
+      "itemGroup.upgradesmpmod.allitems": "All Upgrade SMP Items",
+      "advancements.welcometohell.title": "Welcome to HELL"
     }
   },
   "foldersRoot": {
