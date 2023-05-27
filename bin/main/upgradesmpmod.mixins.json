@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.darksmp.upgradesmpmod.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+	"UpgradesmpmodModRepairItemRecipeMixin"  ],
+  "injectors": {
+	"defaultRequire": 1
+  }
+}

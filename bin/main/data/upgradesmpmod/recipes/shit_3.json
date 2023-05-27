@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_leggings"
+  },
+  "addition": {
+    "item": "upgradesmpmod:reinforcediron"
+  },
+  "result": {
+    "item": "upgradesmpmod:reinforced_iron_armor_leggings"
+  }
+}

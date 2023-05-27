@@ -1,0 +1,21 @@
+{
+  "_fv": 39,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Reinfoced Damage",
+    "type": "WEAPON",
+    "rarity": "RARE",
+    "minLevel": 10,
+    "maxLevel": 48,
+    "damageModifier": 20,
+    "compatibleEnchantments": [],
+    "excludeEnchantments": true,
+    "compatibleItems": [],
+    "excludeItems": true,
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": true,
+    "canGenerateInLootTables": true,
+    "canVillagerTrade": true
+  }
+}

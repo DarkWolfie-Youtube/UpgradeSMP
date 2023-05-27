@@ -155,6 +155,7 @@
     {
       "name": "HellAdvancement",
       "type": "procedure",
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hell_advancement",
@@ -169,6 +170,41 @@
           }
         ]
       }
+    },
+    {
+      "name": "ReinfocedDamage",
+      "type": "enchantment",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinfoced_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/enchantment/ReinfocedDamageEnchantment.java"
+        ]
+      }
+    },
+    {
+      "name": "EnchantmentDamage",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enchantment_damage",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/procedures/EnchantmentDamageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -179,6 +215,7 @@
       "advancements.welcometohell.descr": "Welcome to the Upgrade SMP. You got this achievement because uyou joined HELL.",
       "item.upgradesmpmod.reinforced_iron_armor_chestplate": "Reinforced Iron Chestplate",
       "item.upgradesmpmod.reinforced_iron_armor_helmet": "Reinforced Iron Helmet",
+      "enchantment.upgradesmpmod.reinfoced_damage": "Reinfoced Damage",
       "item.upgradesmpmod.reinforced_iron_armor_boots": "Reinforced Iron Boots",
       "item.upgradesmpmod.reinforced_iron_armor_leggings": "Reinforced Iron Leggings",
       "item.upgradesmpmod.reinforcediron": "Reinforced Iron Shard",
