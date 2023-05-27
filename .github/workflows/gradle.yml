@@ -38,4 +38,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: MOD-FILE
-        path: build/reobfJar/output.jar
+        path: build\libs\modid-1.0.0.jar
