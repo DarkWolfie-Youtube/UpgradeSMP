@@ -45,7 +45,7 @@ public class LemonStage0UpdateTickProcedure {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		BlockState b0 = Blocks.AIR.defaultBlockState();
 		b0 = UpgradesmpmodModBlocks.LEMON_SAPLING.defaultBlockState();
-		if (Math.random() < 0.1) {
+		if (Math.random() < 0.5) {
 			if (world instanceof ServerLevel _serverworld) {
 				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("upgradesmpmod", "wolfie"));
 				if (template != null) {
