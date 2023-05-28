@@ -71,7 +71,7 @@ public class LemonSaplingBlock extends Block {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		LemonStage0UpdateTickProcedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("world", world).put("x", x).put("y", y).put("z", z).put("blockstate", blockstate).build());
+		LemonStage0UpdateTickProcedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("world", world).put("x", x).put("y", y).put("z", z).build());
 	}
 
 	@Environment(EnvType.CLIENT)
