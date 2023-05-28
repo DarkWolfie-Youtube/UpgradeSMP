@@ -21,13 +21,10 @@ import com.darksmp.upgradesmpmod.init.UpgradesmpmodModTabs;
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModSounds;
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModProcedures;
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModPaintings;
-import com.darksmp.upgradesmpmod.init.UpgradesmpmodModMenus;
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModItems;
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModFeatures;
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModEnchantments;
-import com.darksmp.upgradesmpmod.init.UpgradesmpmodModCommands;
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModBlocks;
-import com.darksmp.upgradesmpmod.init.UpgradesmpmodModBlockEntities;
 
 public class UpgradesmpmodMod implements ModInitializer {
 	public static final Logger LOGGER = LogManager.getLogger();
@@ -42,14 +39,10 @@ public class UpgradesmpmodMod implements ModInitializer {
 
 		UpgradesmpmodModBlocks.load();
 		UpgradesmpmodModItems.load();
-		UpgradesmpmodModBlockEntities.load();
 
 		UpgradesmpmodModFeatures.load();
 		UpgradesmpmodModPaintings.load();
 		UpgradesmpmodModProcedures.load();
-		UpgradesmpmodModCommands.load();
-
-		UpgradesmpmodModMenus.load();
 
 		UpgradesmpmodModSounds.load();
 

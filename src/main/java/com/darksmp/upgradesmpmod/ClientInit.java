@@ -16,7 +16,6 @@ import net.fabricmc.api.Environment;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.ClientModInitializer;
 
-import com.darksmp.upgradesmpmod.init.UpgradesmpmodModScreens;
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModBlocks;
 
 @Environment(EnvType.CLIENT)
@@ -25,7 +24,6 @@ public class ClientInit implements ClientModInitializer {
 	public void onInitializeClient() {
 
 		UpgradesmpmodModBlocks.clientLoad();
-		UpgradesmpmodModScreens.load();
 
 	}
 }
