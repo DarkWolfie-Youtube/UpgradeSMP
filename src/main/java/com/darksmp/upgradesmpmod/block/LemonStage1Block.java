@@ -26,10 +26,10 @@ import java.util.Collections;
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModItems;
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModBlocks;
 
-public class LemonStage0Block extends Block {
+public class LemonStage1Block extends Block {
 	public static BlockBehaviour.Properties PROPERTIES = FabricBlockSettings.of(Material.PLANT).sound(SoundType.GRAVEL).strength(1f, 10f).noCollission().noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false);
 
-	public LemonStage0Block() {
+	public LemonStage1Block() {
 		super(PROPERTIES);
 	}
 
@@ -64,6 +64,6 @@ public class LemonStage0Block extends Block {
 
 	@Environment(EnvType.CLIENT)
 	public static void clientInit() {
-		BlockRenderLayerMap.INSTANCE.putBlock(UpgradesmpmodModBlocks.LEMON_STAGE_0, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(UpgradesmpmodModBlocks.LEMON_STAGE_1, RenderType.cutout());
 	}
 }

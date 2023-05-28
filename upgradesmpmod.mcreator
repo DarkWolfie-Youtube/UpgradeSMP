@@ -167,6 +167,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -267,6 +271,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -286,6 +306,23 @@
         "dependencies": []
       },
       "path": "~/Crops/Lemon"
+    },
+    {
+      "name": "LemonStage1",
+      "type": "block",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lemon_stage_1",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/block/LemonStage1Block.java",
+          "src/main/resources/assets/upgradesmpmod/models/block/lemon_stage_1.json",
+          "src/main/resources/assets/upgradesmpmod/blockstates/lemon_stage_1.json",
+          "src/main/resources/assets/upgradesmpmod/models/item/lemon_stage_1.json"
+        ]
+      },
+      "path": "~/Crops/Lemon"
     }
   ],
   "variable_elements": [],
@@ -301,9 +338,10 @@
       "itemGroup.upgradesmpmod.allitems": "All Upgrade SMP Items",
       "item.upgradesmpmod.lemon_seeds": "Lemon Seeds",
       "advancements.welcometohell.title": "Welcome to HELL",
-      "advancements.welcometohell.descr": "Welcome to the Upgrade SMP. You got this achievement because uyou joined HELL.",
+      "advancements.welcometohell.descr": "Welcome to the Upgrade SMP. You got this achievement because you joined HELL.",
       "item.upgradesmpmod.reinforced_iron_armor_boots": "Reinforced Iron Boots",
       "block.upgradesmpmod.fuckin_lilac": "Fuckin Lilac",
+      "block.upgradesmpmod.lemon_stage_1": "Lemon Stage 1",
       "block.upgradesmpmod.lemon_stage_0": "Lemon Stage 0"
     }
   },
