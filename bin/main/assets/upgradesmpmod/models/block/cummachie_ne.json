@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "upgradesmpmod:blocks/cum",
-    "particle": "upgradesmpmod:blocks/cum"
-  }
-}

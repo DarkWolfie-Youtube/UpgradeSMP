@@ -87,7 +87,7 @@ public class CUMMACHIENeBlockEntity extends RandomizableContainerBlockEntity imp
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("CUMMACHIE Ne");
+		return Component.literal("CUM MACHIENE");
 	}
 
 	@Override
