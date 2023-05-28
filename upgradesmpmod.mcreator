@@ -361,6 +361,23 @@
         ]
       },
       "path": "~/Crops/Lemon"
+    },
+    {
+      "name": "LemonStage3",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lemon_stage_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/upgradesmpmod/models/item/lemon_stage_3.json",
+          "src/main/java/com/darksmp/upgradesmpmod/block/LemonStage3Block.java",
+          "src/main/resources/assets/upgradesmpmod/blockstates/lemon_stage_3.json",
+          "src/main/resources/assets/upgradesmpmod/models/block/lemon_stage_3.json"
+        ]
+      },
+      "path": "~/Crops/Lemon"
     }
   ],
   "variable_elements": [],
@@ -389,6 +406,7 @@
       "advancements.welcometohell.descr": "Welcome to the Upgrade SMP. You got this achievement because you joined HELL.",
       "item.upgradesmpmod.reinforced_iron_armor_boots": "Reinforced Iron Boots",
       "block.upgradesmpmod.fuckin_lilac": "Fuckin Lilac",
+      "block.upgradesmpmod.lemon_stage_3": "Lemon Stage 1",
       "block.upgradesmpmod.lemon_stage_2": "Lemon Stage 1",
       "block.upgradesmpmod.lemon_stage_1": "Lemon Stage 1",
       "block.upgradesmpmod.lemon_stage_0": "Lemon Stage 0"
