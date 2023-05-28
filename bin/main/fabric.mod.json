@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "upgradesmpmod",
+  "version": "1.0.0",
+  "name": "Upgrade SMP mod",
+  "authors": [
+    "adeeb, MCreator"
+  ],
+  "contact": {
+    "homepage": "https://mcreator.net",
+    "sources": ""
+  },
+  "license": "MIT License",
+  "icon": "assets/upgradesmpmod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.darksmp.upgradesmpmod.UpgradesmpmodMod"
+    ],
+    "client": [
+      "com.darksmp.upgradesmpmod.ClientInit"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "mixins": [
+    "upgradesmpmod.mixins.json"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "lemon_planted": {
+    "category": "master",
+    "subtitle": "subtitles.lemon_planted",
+    "sounds": [
+      {
+        "name": "upgradesmpmod:lemon",
+        "stream": false
+      }
+    ]
+  },
+  "bluemf": {
+    "category": "neutral",
+    "subtitle": "subtitles.bluemf",
+    "sounds": [
+      {
+        "name": "upgradesmpmod:blue",
+        "stream": false
+      }
+    ]
+  }
+}
