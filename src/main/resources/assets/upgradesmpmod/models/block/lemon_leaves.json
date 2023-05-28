@@ -1,0 +1,7 @@
+{
+  "parent": "block/leaves",
+  "textures": {
+    "all": "upgradesmpmod:blocks/maxresdefault.webp2",
+    "particle": "upgradesmpmod:blocks/maxresdefault.webp2"
+  }
+}

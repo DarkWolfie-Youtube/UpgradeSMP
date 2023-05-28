@@ -236,23 +236,6 @@
       "path": "~/Crops/Lemon"
     },
     {
-      "name": "LemonStage0",
-      "type": "block",
-      "sortid": 14,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lemon_stage_0",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/upgradesmpmod/blockstates/lemon_stage_0.json",
-          "src/main/java/com/darksmp/upgradesmpmod/block/LemonStage0Block.java",
-          "src/main/resources/assets/upgradesmpmod/models/item/lemon_stage_0.json",
-          "src/main/resources/assets/upgradesmpmod/models/block/lemon_stage_0.json"
-        ]
-      },
-      "path": "~/Crops/Lemon"
-    },
-    {
       "name": "LemonSeedsRightclickedOnBlock",
       "type": "procedure",
       "sortid": 15,
@@ -264,10 +247,6 @@
           "src/main/java/com/darksmp/upgradesmpmod/procedures/LemonSeedsRightclickedOnBlockProcedure.java"
         ],
         "dependencies": [
-          {
-            "name": "blockstate",
-            "type": "blockstate"
-          },
           {
             "name": "entity",
             "type": "entity"
@@ -329,52 +308,49 @@
       "path": "~/Crops/Lemon"
     },
     {
-      "name": "LemonStage1",
+      "name": "LemonSapling",
       "type": "block",
       "sortid": 17,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "lemon_stage_1",
+      "registry_name": "lemon_sapling",
       "metadata": {
         "files": [
-          "src/main/java/com/darksmp/upgradesmpmod/block/LemonStage1Block.java",
-          "src/main/resources/assets/upgradesmpmod/models/block/lemon_stage_1.json",
-          "src/main/resources/assets/upgradesmpmod/blockstates/lemon_stage_1.json",
-          "src/main/resources/assets/upgradesmpmod/models/item/lemon_stage_1.json"
+          "src/main/resources/assets/upgradesmpmod/models/item/lemon_sapling.json",
+          "src/main/resources/assets/upgradesmpmod/blockstates/lemon_sapling.json",
+          "src/main/java/com/darksmp/upgradesmpmod/block/LemonSaplingBlock.java",
+          "src/main/resources/assets/upgradesmpmod/models/block/lemon_sapling.json"
         ]
       },
       "path": "~/Crops/Lemon"
     },
     {
-      "name": "LemonStage2",
+      "name": "LemonLeaves",
       "type": "block",
       "sortid": 18,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "lemon_stage_2",
+      "registry_name": "lemon_leaves",
       "metadata": {
         "files": [
-          "src/main/resources/assets/upgradesmpmod/models/block/lemon_stage_2.json",
-          "src/main/resources/assets/upgradesmpmod/blockstates/lemon_stage_2.json",
-          "src/main/java/com/darksmp/upgradesmpmod/block/LemonStage2Block.java",
-          "src/main/resources/assets/upgradesmpmod/models/item/lemon_stage_2.json"
+          "src/main/resources/assets/upgradesmpmod/models/item/lemon_leaves.json",
+          "src/main/resources/assets/upgradesmpmod/models/block/lemon_leaves.json",
+          "src/main/resources/assets/upgradesmpmod/blockstates/lemon_leaves.json",
+          "src/main/java/com/darksmp/upgradesmpmod/block/LemonLeavesBlock.java"
         ]
       },
       "path": "~/Crops/Lemon"
     },
     {
-      "name": "LemonStage3",
-      "type": "block",
+      "name": "LemonTree",
+      "type": "structure",
       "sortid": 19,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "lemon_stage_3",
+      "registry_name": "lemon_tree",
       "metadata": {
         "files": [
-          "src/main/resources/assets/upgradesmpmod/models/item/lemon_stage_3.json",
-          "src/main/java/com/darksmp/upgradesmpmod/block/LemonStage3Block.java",
-          "src/main/resources/assets/upgradesmpmod/blockstates/lemon_stage_3.json",
-          "src/main/resources/assets/upgradesmpmod/models/block/lemon_stage_3.json"
+          "src/main/java/com/darksmp/upgradesmpmod/world/features/LemonTreeFeature.java"
         ]
       },
       "path": "~/Crops/Lemon"
@@ -397,19 +373,17 @@
       "item.upgradesmpmod.reinforced_iron_armor_chestplate": "Reinforced Iron Chestplate",
       "item.upgradesmpmod.reinforced_iron_armor_helmet": "Reinforced Iron Helmet",
       "enchantment.upgradesmpmod.reinfoced_damage": "Reinfoced Damage",
+      "block.upgradesmpmod.lemon_leaves": "Lemon Leaves",
       "item.upgradesmpmod.reinforced_iron_armor_leggings": "Reinforced Iron Leggings",
       "subtitles.lemon_planted": "SHIT I SCARE U",
       "item.upgradesmpmod.reinforcediron": "Reinforced Iron Shard",
+      "block.upgradesmpmod.lemon_sapling": "Lemon Sapling",
       "itemGroup.upgradesmpmod.allitems": "All Upgrade SMP Items",
       "item.upgradesmpmod.lemon_seeds": "Lemon Seeds",
       "advancements.welcometohell.title": "Welcome to HELL",
       "advancements.welcometohell.descr": "Welcome to the Upgrade SMP. You got this achievement because you joined HELL.",
       "item.upgradesmpmod.reinforced_iron_armor_boots": "Reinforced Iron Boots",
-      "block.upgradesmpmod.fuckin_lilac": "Fuckin Lilac",
-      "block.upgradesmpmod.lemon_stage_3": "Lemon Stage 1",
-      "block.upgradesmpmod.lemon_stage_2": "Lemon Stage 1",
-      "block.upgradesmpmod.lemon_stage_1": "Lemon Stage 1",
-      "block.upgradesmpmod.lemon_stage_0": "Lemon Stage 0"
+      "block.upgradesmpmod.fuckin_lilac": "Fuckin Lilac"
     }
   },
   "foldersRoot": {

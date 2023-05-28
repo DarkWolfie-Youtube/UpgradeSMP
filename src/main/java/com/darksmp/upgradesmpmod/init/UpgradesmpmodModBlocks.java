@@ -9,36 +9,28 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Registry;
 
 import com.darksmp.upgradesmpmod.block.ReinforcedIronOre2OreBlock;
-import com.darksmp.upgradesmpmod.block.LemonStage3Block;
-import com.darksmp.upgradesmpmod.block.LemonStage2Block;
-import com.darksmp.upgradesmpmod.block.LemonStage1Block;
-import com.darksmp.upgradesmpmod.block.LemonStage0Block;
+import com.darksmp.upgradesmpmod.block.LemonSaplingBlock;
+import com.darksmp.upgradesmpmod.block.LemonLeavesBlock;
 import com.darksmp.upgradesmpmod.block.FuckinLilacBlock;
 import com.darksmp.upgradesmpmod.UpgradesmpmodMod;
 
 public class UpgradesmpmodModBlocks {
 	public static Block REINFORCED_IRON_ORE_2_ORE;
 	public static Block FUCKIN_LILAC;
-	public static Block LEMON_STAGE_0;
-	public static Block LEMON_STAGE_1;
-	public static Block LEMON_STAGE_2;
-	public static Block LEMON_STAGE_3;
+	public static Block LEMON_SAPLING;
+	public static Block LEMON_LEAVES;
 
 	public static void load() {
 		REINFORCED_IRON_ORE_2_ORE = Registry.register(Registry.BLOCK, new ResourceLocation(UpgradesmpmodMod.MODID, "reinforced_iron_ore_2_ore"), new ReinforcedIronOre2OreBlock());
 		FUCKIN_LILAC = Registry.register(Registry.BLOCK, new ResourceLocation(UpgradesmpmodMod.MODID, "fuckin_lilac"), new FuckinLilacBlock());
-		LEMON_STAGE_0 = Registry.register(Registry.BLOCK, new ResourceLocation(UpgradesmpmodMod.MODID, "lemon_stage_0"), new LemonStage0Block());
-		LEMON_STAGE_1 = Registry.register(Registry.BLOCK, new ResourceLocation(UpgradesmpmodMod.MODID, "lemon_stage_1"), new LemonStage1Block());
-		LEMON_STAGE_2 = Registry.register(Registry.BLOCK, new ResourceLocation(UpgradesmpmodMod.MODID, "lemon_stage_2"), new LemonStage2Block());
-		LEMON_STAGE_3 = Registry.register(Registry.BLOCK, new ResourceLocation(UpgradesmpmodMod.MODID, "lemon_stage_3"), new LemonStage3Block());
+		LEMON_SAPLING = Registry.register(Registry.BLOCK, new ResourceLocation(UpgradesmpmodMod.MODID, "lemon_sapling"), new LemonSaplingBlock());
+		LEMON_LEAVES = Registry.register(Registry.BLOCK, new ResourceLocation(UpgradesmpmodMod.MODID, "lemon_leaves"), new LemonLeavesBlock());
 	}
 
 	public static void clientLoad() {
 		ReinforcedIronOre2OreBlock.clientInit();
 		FuckinLilacBlock.clientInit();
-		LemonStage0Block.clientInit();
-		LemonStage1Block.clientInit();
-		LemonStage2Block.clientInit();
-		LemonStage3Block.clientInit();
+		LemonSaplingBlock.clientInit();
+		LemonLeavesBlock.clientInit();
 	}
 }

@@ -2,14 +2,14 @@
   "_fv": 39,
   "_type": "block",
   "definition": {
-    "texture": "lemon_stage_0",
+    "texture": "oak_sapling",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 13,
-    "customModelName": "Crop model",
+    "renderType": 12,
+    "customModelName": "Cross model",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -27,13 +27,13 @@
         "mx": 0.0,
         "my": 0.0,
         "mz": 0.0,
-        "Mx": 16.0,
-        "My": 3.0,
-        "Mz": 16.0,
+        "Mx": 10.0,
+        "My": 10.0,
+        "Mz": 10.0,
         "subtract": false
       }
     ],
-    "name": "Lemon Stage 0",
+    "name": "Lemon Sapling",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -54,10 +54,10 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "PLANTS"
+      "value": "ROCK"
     },
     "tickRate": 0,
-    "tickRandomly": true,
+    "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {
@@ -79,7 +79,7 @@
     "isNotColidable": true,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "PLANT"
     },
     "breakSound": {
       "value": ""
@@ -122,10 +122,14 @@
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.STONE"
+      }
+    ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 1,
-    "frequencyOnChunk": 1,
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64
   }

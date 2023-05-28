@@ -3,16 +3,15 @@
   "item.upgradesmpmod.reinforced_iron_armor_chestplate": "Reinforced Iron Chestplate",
   "item.upgradesmpmod.reinforced_iron_armor_helmet": "Reinforced Iron Helmet",
   "enchantment.upgradesmpmod.reinfoced_damage": "Reinfoced Damage",
+  "block.upgradesmpmod.lemon_leaves": "Lemon Leaves",
   "item.upgradesmpmod.reinforced_iron_armor_leggings": "Reinforced Iron Leggings",
   "subtitles.lemon_planted": "SHIT I SCARE U",
   "item.upgradesmpmod.reinforcediron": "Reinforced Iron Shard",
+  "block.upgradesmpmod.lemon_sapling": "Lemon Sapling",
   "itemGroup.upgradesmpmod.allitems": "All Upgrade SMP Items",
   "item.upgradesmpmod.lemon_seeds": "Lemon Seeds",
   "advancements.welcometohell.title": "Welcome to HELL",
   "advancements.welcometohell.descr": "Welcome to the Upgrade SMP. You got this achievement because you joined HELL.",
   "item.upgradesmpmod.reinforced_iron_armor_boots": "Reinforced Iron Boots",
-  "block.upgradesmpmod.fuckin_lilac": "Fuckin Lilac",
-  "block.upgradesmpmod.lemon_stage_2": "Lemon Stage 1",
-  "block.upgradesmpmod.lemon_stage_1": "Lemon Stage 1",
-  "block.upgradesmpmod.lemon_stage_0": "Lemon Stage 0"
+  "block.upgradesmpmod.fuckin_lilac": "Fuckin Lilac"
 }

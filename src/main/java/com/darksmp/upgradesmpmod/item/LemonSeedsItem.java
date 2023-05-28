@@ -24,7 +24,7 @@ public class LemonSeedsItem extends Item {
 	public InteractionResult useOn(UseOnContext context) {
 		InteractionResult retval = super.useOn(context);
 		LemonSeedsRightclickedOnBlockProcedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("world", context.getLevel()).put("x", context.getClickedPos().getX()).put("y", context.getClickedPos().getY())
-				.put("z", context.getClickedPos().getZ()).put("blockstate", context.getLevel().getBlockState(context.getClickedPos())).put("entity", context.getPlayer()).build());
+				.put("z", context.getClickedPos().getZ()).put("entity", context.getPlayer()).build());
 		return retval;
 	}
 }

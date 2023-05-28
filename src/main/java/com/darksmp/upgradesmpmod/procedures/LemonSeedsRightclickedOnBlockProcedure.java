@@ -42,11 +42,6 @@ public class LemonSeedsRightclickedOnBlockProcedure {
 				UpgradesmpmodMod.LOGGER.warn("Failed to load dependency z for procedure LemonSeedsRightclickedOnBlock!");
 			return;
 		}
-		if (dependencies.get("blockstate") == null) {
-			if (!dependencies.containsKey("blockstate"))
-				UpgradesmpmodMod.LOGGER.warn("Failed to load dependency blockstate for procedure LemonSeedsRightclickedOnBlock!");
-			return;
-		}
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
 				UpgradesmpmodMod.LOGGER.warn("Failed to load dependency entity for procedure LemonSeedsRightclickedOnBlock!");
@@ -56,20 +51,17 @@ public class LemonSeedsRightclickedOnBlockProcedure {
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
-		BlockState blockstate = (BlockState) dependencies.get("blockstate");
 		Entity entity = (Entity) dependencies.get("entity");
 		ItemStack seeds = ItemStack.EMPTY;
 		BlockState stage0 = Blocks.AIR.defaultBlockState();
-		BlockState farmland = Blocks.AIR.defaultBlockState();
 		String isRunning = "";
 		seeds = new ItemStack(UpgradesmpmodModItems.LEMON_SEEDS);
-		stage0 = UpgradesmpmodModBlocks.LEMON_STAGE_0.defaultBlockState();
-		farmland = Blocks.FARMLAND.defaultBlockState();
+		stage0 = UpgradesmpmodModBlocks.LEMON_SAPLING.defaultBlockState();
 		if ((isRunning).equals("true") == false && (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == seeds.getItem()) {
 			isRunning = "true";
-			if (farmland.getBlock() == blockstate.getBlock() && (world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == Blocks.AIR) {
+			if (true) {
 				{
-					BlockPos _bp = new BlockPos(x, y + 1, z);
+					BlockPos _bp = new BlockPos(x, y, z);
 					BlockState _bs = stage0;
 					BlockState _bso = world.getBlockState(_bp);
 					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
