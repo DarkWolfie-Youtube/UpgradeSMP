@@ -10,7 +10,7 @@
     "textureBack": "reinforced_deepslate_side",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 5,
+    "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -33,7 +33,7 @@
         "subtract": false
       }
     ],
-    "name": "Reinforced Iron Ore",
+    "name": "Reinforced Blue Ore",
     "specialInfo": [],
     "hardness": 100.0,
     "resistance": 5.0,
