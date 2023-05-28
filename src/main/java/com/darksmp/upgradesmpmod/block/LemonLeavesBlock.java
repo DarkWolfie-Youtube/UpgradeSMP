@@ -71,6 +71,6 @@ public class LemonLeavesBlock extends Block implements SimpleWaterloggedBlock {
 
 	@Environment(EnvType.CLIENT)
 	public static void clientInit() {
-		BlockRenderLayerMap.INSTANCE.putBlock(UpgradesmpmodModBlocks.LEMON_LEAVES, RenderType.solid());
+		BlockRenderLayerMap.INSTANCE.putBlock(UpgradesmpmodModBlocks.LEMON_LEAVES, RenderType.cutout());
 	}
 }

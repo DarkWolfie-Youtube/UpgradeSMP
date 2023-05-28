@@ -61,7 +61,7 @@ public class LemonSeedsRightclickedOnBlockProcedure {
 			isRunning = "true";
 			if (true) {
 				{
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = new BlockPos(x, y + 1, z);
 					BlockState _bs = stage0;
 					BlockState _bso = world.getBlockState(_bp);
 					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
