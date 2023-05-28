@@ -2,7 +2,7 @@
   "_fv": 39,
   "_type": "block",
   "definition": {
-    "texture": "lemon_stage_0",
+    "texture": "lemon_state_2",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -28,19 +28,19 @@
         "my": 0.0,
         "mz": 0.0,
         "Mx": 16.0,
-        "My": 3.0,
+        "My": 10.0,
         "Mz": 16.0,
         "subtract": false
       }
     ],
-    "name": "Lemon Stage 0",
+    "name": "Lemon Stage 1",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:ALLITEMS"
+      "value": "No creative tab entry"
     },
     "destroyTool": "Not specified",
     "customDrop": {

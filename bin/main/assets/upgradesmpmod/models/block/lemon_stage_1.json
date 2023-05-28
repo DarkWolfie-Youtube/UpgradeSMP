@@ -1,7 +1,7 @@
 {
   "parent": "block/crop",
   "textures": {
-    "crop": "upgradesmpmod:blocks/lemon_stage_0",
-    "particle": "upgradesmpmod:blocks/lemon_stage_0"
+    "crop": "upgradesmpmod:blocks/lemon_state_1",
+    "particle": "upgradesmpmod:blocks/lemon_state_1"
   }
 }

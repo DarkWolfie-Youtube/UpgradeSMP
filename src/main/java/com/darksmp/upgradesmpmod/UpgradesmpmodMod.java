@@ -18,6 +18,7 @@ import org.apache.logging.log4j.LogManager;
 import net.fabricmc.api.ModInitializer;
 
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModTabs;
+import com.darksmp.upgradesmpmod.init.UpgradesmpmodModSounds;
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModProcedures;
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModPaintings;
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModItems;
@@ -42,6 +43,8 @@ public class UpgradesmpmodMod implements ModInitializer {
 		UpgradesmpmodModFeatures.load();
 		UpgradesmpmodModPaintings.load();
 		UpgradesmpmodModProcedures.load();
+
+		UpgradesmpmodModSounds.load();
 
 	}
 }

@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "upgradesmpmod:blocks/lemon_state_1"
+    "layer0": "upgradesmpmod:blocks/lemon_state_2"
   }
 }

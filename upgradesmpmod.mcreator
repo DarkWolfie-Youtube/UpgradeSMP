@@ -303,7 +303,28 @@
         "files": [
           "src/main/java/com/darksmp/upgradesmpmod/procedures/LemonStage0UpdateTickProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/Crops/Lemon"
     },
@@ -323,10 +344,36 @@
         ]
       },
       "path": "~/Crops/Lemon"
+    },
+    {
+      "name": "LemonStage2",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lemon_stage_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/upgradesmpmod/models/block/lemon_stage_2.json",
+          "src/main/resources/assets/upgradesmpmod/blockstates/lemon_stage_2.json",
+          "src/main/java/com/darksmp/upgradesmpmod/block/LemonStage2Block.java",
+          "src/main/resources/assets/upgradesmpmod/models/item/lemon_stage_2.json"
+        ]
+      },
+      "path": "~/Crops/Lemon"
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "lemon_planted",
+      "files": [
+        "lemon"
+      ],
+      "category": "master",
+      "subtitle": "SHIT I SCARE U"
+    }
+  ],
   "language_map": {
     "en_us": {
       "block.upgradesmpmod.reinforced_iron_ore_2_ore": "Reinforced Iron Ore",
@@ -334,6 +381,7 @@
       "item.upgradesmpmod.reinforced_iron_armor_helmet": "Reinforced Iron Helmet",
       "enchantment.upgradesmpmod.reinfoced_damage": "Reinfoced Damage",
       "item.upgradesmpmod.reinforced_iron_armor_leggings": "Reinforced Iron Leggings",
+      "subtitles.lemon_planted": "SHIT I SCARE U",
       "item.upgradesmpmod.reinforcediron": "Reinforced Iron Shard",
       "itemGroup.upgradesmpmod.allitems": "All Upgrade SMP Items",
       "item.upgradesmpmod.lemon_seeds": "Lemon Seeds",
@@ -341,6 +389,7 @@
       "advancements.welcometohell.descr": "Welcome to the Upgrade SMP. You got this achievement because you joined HELL.",
       "item.upgradesmpmod.reinforced_iron_armor_boots": "Reinforced Iron Boots",
       "block.upgradesmpmod.fuckin_lilac": "Fuckin Lilac",
+      "block.upgradesmpmod.lemon_stage_2": "Lemon Stage 1",
       "block.upgradesmpmod.lemon_stage_1": "Lemon Stage 1",
       "block.upgradesmpmod.lemon_stage_0": "Lemon Stage 0"
     }

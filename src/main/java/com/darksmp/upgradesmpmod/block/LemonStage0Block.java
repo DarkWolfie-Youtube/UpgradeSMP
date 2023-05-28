@@ -12,6 +12,8 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.util.RandomSource;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.renderer.RenderType;
 
@@ -23,6 +25,7 @@ import net.fabricmc.api.EnvType;
 import java.util.List;
 import java.util.Collections;
 
+import com.darksmp.upgradesmpmod.procedures.LemonStage0UpdateTickProcedure;
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModItems;
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModBlocks;
 
@@ -60,6 +63,15 @@ public class LemonStage0Block extends Block {
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(UpgradesmpmodModItems.LEMON_SEEDS));
+	}
+
+	@Override
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
+		super.tick(blockstate, world, pos, random);
+		int x = pos.getX();
+		int y = pos.getY();
+		int z = pos.getZ();
+		LemonStage0UpdateTickProcedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("world", world).put("x", x).put("y", y).put("z", z).put("blockstate", blockstate).build());
 	}
 
 	@Environment(EnvType.CLIENT)

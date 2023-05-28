@@ -29,10 +29,10 @@ import com.darksmp.upgradesmpmod.procedures.LemonStage0UpdateTickProcedure;
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModItems;
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModBlocks;
 
-public class LemonStage1Block extends Block {
+public class LemonStage2Block extends Block {
 	public static BlockBehaviour.Properties PROPERTIES = FabricBlockSettings.of(Material.PLANT).sound(SoundType.GRAVEL).strength(1f, 10f).noCollission().noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false);
 
-	public LemonStage1Block() {
+	public LemonStage2Block() {
 		super(PROPERTIES);
 	}
 
@@ -49,7 +49,7 @@ public class LemonStage1Block extends Block {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		Vec3 offset = state.getOffset(world, pos);
-		return box(0, 0, 0, 16, 7, 16).move(offset.x, offset.y, offset.z);
+		return box(0, 0, 0, 16, 10, 16).move(offset.x, offset.y, offset.z);
 	}
 
 	@Override
@@ -76,6 +76,6 @@ public class LemonStage1Block extends Block {
 
 	@Environment(EnvType.CLIENT)
 	public static void clientInit() {
-		BlockRenderLayerMap.INSTANCE.putBlock(UpgradesmpmodModBlocks.LEMON_STAGE_1, RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(UpgradesmpmodModBlocks.LEMON_STAGE_2, RenderType.cutout());
 	}
 }

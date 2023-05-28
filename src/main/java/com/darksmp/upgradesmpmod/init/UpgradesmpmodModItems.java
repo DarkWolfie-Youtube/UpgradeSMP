@@ -25,6 +25,7 @@ public class UpgradesmpmodModItems {
 	public static Item LEMON_SEEDS;
 	public static Item LEMON_STAGE_0;
 	public static Item LEMON_STAGE_1;
+	public static Item LEMON_STAGE_2;
 
 	public static void load() {
 		REINFORCEDIRON = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "reinforcediron"), new ReinforcedironItem());
@@ -38,5 +39,6 @@ public class UpgradesmpmodModItems {
 		LEMON_SEEDS = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "lemon_seeds"), new LemonSeedsItem());
 		LEMON_STAGE_0 = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "lemon_stage_0"), new BlockItem(UpgradesmpmodModBlocks.LEMON_STAGE_0, new Item.Properties().tab(UpgradesmpmodModTabs.TAB_ALLITEMS)));
 		LEMON_STAGE_1 = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "lemon_stage_1"), new BlockItem(UpgradesmpmodModBlocks.LEMON_STAGE_1, new Item.Properties().tab(UpgradesmpmodModTabs.TAB_ALLITEMS)));
+		LEMON_STAGE_2 = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "lemon_stage_2"), new BlockItem(UpgradesmpmodModBlocks.LEMON_STAGE_2, new Item.Properties().tab(null)));
 	}
 }
