@@ -33,11 +33,11 @@
       "registry_name": "reinforced_iron_armor",
       "metadata": {
         "files": [
-          "src/main/resources/assets/upgradesmpmod/models/item/reinforced_iron_armor_leggings.json",
           "src/main/java/com/darksmp/upgradesmpmod/item/ReinforcedIronArmorItem.java",
-          "src/main/resources/assets/upgradesmpmod/models/item/reinforced_iron_armor_chestplate.json",
           "src/main/resources/assets/upgradesmpmod/models/item/reinforced_iron_armor_boots.json",
-          "src/main/resources/assets/upgradesmpmod/models/item/reinforced_iron_armor_helmet.json"
+          "src/main/resources/assets/upgradesmpmod/models/item/reinforced_iron_armor_leggings.json",
+          "src/main/resources/assets/upgradesmpmod/models/item/reinforced_iron_armor_helmet.json",
+          "src/main/resources/assets/upgradesmpmod/models/item/reinforced_iron_armor_chestplate.json"
         ]
       }
     },
@@ -51,10 +51,10 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/upgradesmpmod/models/item/reinforced_iron_ore_2_ore.json",
-          "src/main/resources/assets/upgradesmpmod/blockstates/reinforced_iron_ore_2_ore.json",
-          "src/main/java/com/darksmp/upgradesmpmod/world/features/ores/ReinforcedIronOre2OreFeature.java",
           "src/main/resources/assets/upgradesmpmod/models/block/reinforced_iron_ore_2_ore.json",
-          "src/main/java/com/darksmp/upgradesmpmod/block/ReinforcedIronOre2OreBlock.java"
+          "src/main/java/com/darksmp/upgradesmpmod/block/ReinforcedIronOre2OreBlock.java",
+          "src/main/resources/assets/upgradesmpmod/blockstates/reinforced_iron_ore_2_ore.json",
+          "src/main/java/com/darksmp/upgradesmpmod/world/features/ores/ReinforcedIronOre2OreFeature.java"
         ]
       }
     },
@@ -133,10 +133,10 @@
       "metadata": {
         "files": [
           "src/main/java/com/darksmp/upgradesmpmod/world/features/plants/FuckinLilacFeature.java",
-          "src/main/resources/assets/upgradesmpmod/models/block/fuckin_lilac.json",
           "src/main/resources/assets/upgradesmpmod/models/item/fuckin_lilac.json",
+          "src/main/resources/assets/upgradesmpmod/blockstates/fuckin_lilac.json",
           "src/main/java/com/darksmp/upgradesmpmod/block/FuckinLilacBlock.java",
-          "src/main/resources/assets/upgradesmpmod/blockstates/fuckin_lilac.json"
+          "src/main/resources/assets/upgradesmpmod/models/block/fuckin_lilac.json"
         ]
       }
     },
@@ -205,6 +205,87 @@
           }
         ]
       }
+    },
+    {
+      "name": "Utensils",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "utensils",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "LemonSeeds",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lemon_seeds",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/item/LemonSeedsItem.java",
+          "src/main/resources/assets/upgradesmpmod/models/item/lemon_seeds.json"
+        ]
+      },
+      "path": "~/Crops/Lemon"
+    },
+    {
+      "name": "LemonStage0",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lemon_stage_0",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/upgradesmpmod/blockstates/lemon_stage_0.json",
+          "src/main/java/com/darksmp/upgradesmpmod/block/LemonStage0Block.java",
+          "src/main/resources/assets/upgradesmpmod/models/item/lemon_stage_0.json",
+          "src/main/resources/assets/upgradesmpmod/models/block/lemon_stage_0.json"
+        ]
+      },
+      "path": "~/Crops/Lemon"
+    },
+    {
+      "name": "LemonSeedsRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lemon_seeds_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/procedures/LemonSeedsRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Crops/Lemon"
+    },
+    {
+      "name": "LemonStage0UpdateTick",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lemon_stage_0_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/procedures/LemonStage0UpdateTickProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Crops/Lemon"
     }
   ],
   "variable_elements": [],
@@ -212,21 +293,37 @@
   "language_map": {
     "en_us": {
       "block.upgradesmpmod.reinforced_iron_ore_2_ore": "Reinforced Iron Ore",
-      "advancements.welcometohell.descr": "Welcome to the Upgrade SMP. You got this achievement because uyou joined HELL.",
       "item.upgradesmpmod.reinforced_iron_armor_chestplate": "Reinforced Iron Chestplate",
       "item.upgradesmpmod.reinforced_iron_armor_helmet": "Reinforced Iron Helmet",
       "enchantment.upgradesmpmod.reinfoced_damage": "Reinfoced Damage",
-      "item.upgradesmpmod.reinforced_iron_armor_boots": "Reinforced Iron Boots",
       "item.upgradesmpmod.reinforced_iron_armor_leggings": "Reinforced Iron Leggings",
       "item.upgradesmpmod.reinforcediron": "Reinforced Iron Shard",
-      "block.upgradesmpmod.fuckin_lilac": "Fuckin Lilac",
       "itemGroup.upgradesmpmod.allitems": "All Upgrade SMP Items",
-      "advancements.welcometohell.title": "Welcome to HELL"
+      "item.upgradesmpmod.lemon_seeds": "Lemon Seeds",
+      "advancements.welcometohell.title": "Welcome to HELL",
+      "advancements.welcometohell.descr": "Welcome to the Upgrade SMP. You got this achievement because uyou joined HELL.",
+      "item.upgradesmpmod.reinforced_iron_armor_boots": "Reinforced Iron Boots",
+      "block.upgradesmpmod.fuckin_lilac": "Fuckin Lilac",
+      "block.upgradesmpmod.lemon_stage_0": "Lemon Stage 0"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Crops",
+        "children": [
+          {
+            "name": "Lemon",
+            "children": []
+          },
+          {
+            "name": "Lime",
+            "children": []
+          }
+        ]
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "upgradesmpmod",

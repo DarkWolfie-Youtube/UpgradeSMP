@@ -19,6 +19,7 @@ import net.fabricmc.api.ModInitializer;
 
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModTabs;
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModProcedures;
+import com.darksmp.upgradesmpmod.init.UpgradesmpmodModPaintings;
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModItems;
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModFeatures;
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModEnchantments;
@@ -39,7 +40,7 @@ public class UpgradesmpmodMod implements ModInitializer {
 		UpgradesmpmodModItems.load();
 
 		UpgradesmpmodModFeatures.load();
-
+		UpgradesmpmodModPaintings.load();
 		UpgradesmpmodModProcedures.load();
 
 	}

@@ -11,6 +11,7 @@ import net.minecraft.core.Registry;
 
 import com.darksmp.upgradesmpmod.item.ReinforcedironItem;
 import com.darksmp.upgradesmpmod.item.ReinforcedIronArmorItem;
+import com.darksmp.upgradesmpmod.item.LemonSeedsItem;
 import com.darksmp.upgradesmpmod.UpgradesmpmodMod;
 
 public class UpgradesmpmodModItems {
@@ -21,6 +22,8 @@ public class UpgradesmpmodModItems {
 	public static Item REINFORCED_IRON_ARMOR_BOOTS;
 	public static Item REINFORCED_IRON_ORE_2_ORE;
 	public static Item FUCKIN_LILAC;
+	public static Item LEMON_SEEDS;
+	public static Item LEMON_STAGE_0;
 
 	public static void load() {
 		REINFORCEDIRON = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "reinforcediron"), new ReinforcedironItem());
@@ -31,5 +34,7 @@ public class UpgradesmpmodModItems {
 		REINFORCED_IRON_ORE_2_ORE = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "reinforced_iron_ore_2_ore"),
 				new BlockItem(UpgradesmpmodModBlocks.REINFORCED_IRON_ORE_2_ORE, new Item.Properties().tab(UpgradesmpmodModTabs.TAB_ALLITEMS)));
 		FUCKIN_LILAC = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "fuckin_lilac"), new BlockItem(UpgradesmpmodModBlocks.FUCKIN_LILAC, new Item.Properties().tab(UpgradesmpmodModTabs.TAB_ALLITEMS)));
+		LEMON_SEEDS = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "lemon_seeds"), new LemonSeedsItem());
+		LEMON_STAGE_0 = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "lemon_stage_0"), new BlockItem(UpgradesmpmodModBlocks.LEMON_STAGE_0, new Item.Properties().tab(UpgradesmpmodModTabs.TAB_ALLITEMS)));
 	}
 }
