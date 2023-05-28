@@ -29,7 +29,7 @@ import java.util.Collections;
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModBlocks;
 
 public class ReinforcedIronOre2OreBlock extends Block {
-	public static BlockBehaviour.Properties PROPERTIES = FabricBlockSettings.of(Material.STONE).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE).strength(3f, 5f).requiresCorrectToolForDrops();
+	public static BlockBehaviour.Properties PROPERTIES = FabricBlockSettings.of(Material.STONE).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE).strength(100f, 5f).requiresCorrectToolForDrops();
 	public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.AXIS;
 
 	public ReinforcedIronOre2OreBlock() {
