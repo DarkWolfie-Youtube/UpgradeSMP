@@ -44,7 +44,7 @@
     },
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -65,7 +65,7 @@
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:ReinforcedIronOre2Ore"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
@@ -117,6 +117,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onDestroyedByPlayer": {
+      "name": "ReinforcedIronOre2OreBlockDestroyedByPlayer"
+    },
     "spawnWorldTypes": [
       "Surface"
     ],

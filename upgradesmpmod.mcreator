@@ -350,6 +350,42 @@
         ]
       },
       "path": "~/Crops/Lemon"
+    },
+    {
+      "name": "ReinforcedIronOre2OreBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_iron_ore_2_ore_block_destroyed_by_player",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/procedures/ReinforcedIronOre2OreBlockDestroyedByPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crops/Lemon"
     }
   ],
   "variable_elements": [],
