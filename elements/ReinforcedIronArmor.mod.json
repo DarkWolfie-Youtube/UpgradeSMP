@@ -14,10 +14,10 @@
       "value": "CUSTOM:ALLITEMS"
     },
     "armorTextureFile": "iron_",
-    "helmetName": "Reinforced Iron Helmet",
-    "bodyName": "Reinforced Iron Chestplate",
+    "helmetName": "Reinforced Blue Helmet",
+    "bodyName": "Reinforced Blue Chestplate",
     "leggingsName": "Reinforced Blue Leggings",
-    "bootsName": "Reinforced Iron Boots",
+    "bootsName": "Reinforced Blue Boots",
     "helmetSpecialInfo": [],
     "bodySpecialInfo": [],
     "leggingsSpecialInfo": [],
@@ -50,16 +50,16 @@
     "bodyImmuneToFire": false,
     "leggingsImmuneToFire": false,
     "bootsImmuneToFire": false,
-    "maxDamage": 25,
+    "maxDamage": 30,
     "damageValueHelmet": 7,
     "damageValueBody": 11,
     "damageValueLeggings": 8,
     "damageValueBoots": 4,
-    "enchantability": 9,
-    "toughness": 5.0,
+    "enchantability": 35,
+    "toughness": 5.199999999999999,
     "knockbackResistance": 0.5,
     "equipSound": {
-      "value": ""
+      "value": "CUSTOM:bluemf"
     },
     "repairItems": [
       {

@@ -72,58 +72,6 @@
       }
     },
     {
-      "name": "Shit1",
-      "type": "recipe",
-      "sortid": 5,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "shit_1",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/upgradesmpmod/recipes/shit_1.json"
-        ]
-      }
-    },
-    {
-      "name": "Shit2",
-      "type": "recipe",
-      "sortid": 7,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "shit_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/upgradesmpmod/recipes/shit_2.json"
-        ]
-      }
-    },
-    {
-      "name": "Shit3",
-      "type": "recipe",
-      "sortid": 8,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "shit_3",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/upgradesmpmod/recipes/shit_3.json"
-        ]
-      }
-    },
-    {
-      "name": "Shit4",
-      "type": "recipe",
-      "sortid": 9,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "shit_4",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/upgradesmpmod/recipes/shit_4.json"
-        ]
-      }
-    },
-    {
       "name": "FuckinLilac",
       "type": "plant",
       "sortid": 10,
@@ -386,6 +334,103 @@
         ]
       },
       "path": "~/Crops/Lemon"
+    },
+    {
+      "name": "CUM",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cum",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/world/inventory/CUMMenu.java",
+          "src/main/java/com/darksmp/upgradesmpmod/network/CUMButtonMessage.java",
+          "src/main/java/com/darksmp/upgradesmpmod/client/gui/CUMScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "CUMGUI",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cumgui",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/procedures/CUMGUIProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CUMCOMMAND",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cumcommand",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/procedures/CUMCOMMANDProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Upgrade",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upgrade",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/command/UpgradeCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "CUMMACHIENe",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cummachie_ne",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/block/CUMMACHIENeBlock.java",
+          "src/main/resources/assets/upgradesmpmod/blockstates/cummachie_ne.json",
+          "src/main/resources/assets/upgradesmpmod/models/block/cummachie_ne.json",
+          "src/main/resources/assets/upgradesmpmod/models/item/cummachie_ne.json",
+          "src/main/java/com/darksmp/upgradesmpmod/block/entity/CUMMACHIENeBlockEntity.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -397,24 +442,37 @@
       ],
       "category": "master",
       "subtitle": "SHIT I SCARE U"
+    },
+    {
+      "name": "bluemf",
+      "files": [
+        "blue"
+      ],
+      "category": "neutral",
+      "subtitle": "YOU ARE NOW BLUE"
     }
   ],
   "language_map": {
     "en_us": {
       "block.upgradesmpmod.reinforced_iron_ore_2_ore": "Reinforced Blue Ore",
-      "item.upgradesmpmod.reinforced_iron_armor_chestplate": "Reinforced Iron Chestplate",
-      "item.upgradesmpmod.reinforced_iron_armor_helmet": "Reinforced Iron Helmet",
+      "item.upgradesmpmod.reinforced_iron_armor_chestplate": "Reinforced Blue Chestplate",
+      "gui.upgradesmpmod.cum.label_empty": "---\u003e",
+      "item.upgradesmpmod.reinforced_iron_armor_helmet": "Reinforced Blue Helmet",
       "enchantment.upgradesmpmod.reinfoced_damage": "Reinfoced Damage",
       "block.upgradesmpmod.lemon_leaves": "Lemon Leaves",
       "item.upgradesmpmod.reinforced_iron_armor_leggings": "Reinforced Blue Leggings",
       "subtitles.lemon_planted": "SHIT I SCARE U",
-      "item.upgradesmpmod.reinforcediron": "Reinforced Iron Shard",
+      "item.upgradesmpmod.reinforcediron": "Reinforced Blue Shard",
       "block.upgradesmpmod.lemon_sapling": "Lemon Sapling",
       "itemGroup.upgradesmpmod.allitems": "All Upgrade SMP Items",
+      "gui.upgradesmpmod.cum.label_empty1": "+",
       "item.upgradesmpmod.lemon_seeds": "Lemon Seeds",
       "advancements.welcometohell.title": "Welcome to HELL",
+      "block.upgradesmpmod.cummachie_ne": "CUMMACHIE Ne",
       "advancements.welcometohell.descr": "Welcome to the Upgrade SMP. You got this achievement because you joined HELL.",
-      "item.upgradesmpmod.reinforced_iron_armor_boots": "Reinforced Iron Boots",
+      "subtitles.bluemf": "YOU ARE NOW BLUE",
+      "item.upgradesmpmod.reinforced_iron_armor_boots": "Reinforced Blue Boots",
+      "gui.upgradesmpmod.cum.button_cum_on_armor": "CUM ON ARMOR",
       "block.upgradesmpmod.fuckin_lilac": "Fuckin Lilac"
     }
   },
@@ -446,14 +504,16 @@
     "version": "1.0.0",
     "author": "adeeb, MCreator",
     "websiteURL": "https://mcreator.net",
-    "license": "Academic Free License v3.0",
+    "license": "MIT License",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "modPicture": "utentsils_painting",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "fabric-1.19.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "com.darksmp.upgradesmpmod",
     "lockBaseModFiles": false
   },

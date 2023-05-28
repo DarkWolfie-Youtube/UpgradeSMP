@@ -5,10 +5,10 @@
     "renderType": 0,
     "texture": "iron_turd",
     "customModelName": "Normal",
-    "name": "Reinforced Iron Shard",
+    "name": "Reinforced Blue Shard",
     "rarity": "RARE",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:ALLITEMS"
     },
     "stackSize": 64,
     "enchantability": 0,
