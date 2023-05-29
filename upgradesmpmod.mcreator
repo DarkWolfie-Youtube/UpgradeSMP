@@ -72,58 +72,6 @@
       }
     },
     {
-      "name": "Shit1",
-      "type": "recipe",
-      "sortid": 5,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "shit_1",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/upgradesmpmod/recipes/shit_1.json"
-        ]
-      }
-    },
-    {
-      "name": "Shit2",
-      "type": "recipe",
-      "sortid": 7,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "shit_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/upgradesmpmod/recipes/shit_2.json"
-        ]
-      }
-    },
-    {
-      "name": "Shit3",
-      "type": "recipe",
-      "sortid": 8,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "shit_3",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/upgradesmpmod/recipes/shit_3.json"
-        ]
-      }
-    },
-    {
-      "name": "Shit4",
-      "type": "recipe",
-      "sortid": 9,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "shit_4",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/upgradesmpmod/recipes/shit_4.json"
-        ]
-      }
-    },
-    {
       "name": "FuckinLilac",
       "type": "plant",
       "sortid": 10,
@@ -304,23 +252,6 @@
       "path": "~/Crops/Lemon"
     },
     {
-      "name": "LemonSapling",
-      "type": "block",
-      "sortid": 17,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "lemon_sapling",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/upgradesmpmod/models/item/lemon_sapling.json",
-          "src/main/resources/assets/upgradesmpmod/blockstates/lemon_sapling.json",
-          "src/main/java/com/darksmp/upgradesmpmod/block/LemonSaplingBlock.java",
-          "src/main/resources/assets/upgradesmpmod/models/block/lemon_sapling.json"
-        ]
-      },
-      "path": "~/Crops/Lemon"
-    },
-    {
       "name": "LemonLeaves",
       "type": "block",
       "sortid": 18,
@@ -350,6 +281,116 @@
         ]
       },
       "path": "~/Crops/Lemon"
+    },
+    {
+      "name": "ReinforcedIronOre2OreBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_iron_ore_2_ore_block_destroyed_by_player",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/procedures/ReinforcedIronOre2OreBlockDestroyedByPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crops/Lemon"
+    },
+    {
+      "name": "LemonSapling",
+      "type": "plant",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lemon_sapling",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/upgradesmpmod/models/item/lemon_sapling.json",
+          "src/main/resources/assets/upgradesmpmod/blockstates/lemon_sapling.json",
+          "src/main/java/com/darksmp/upgradesmpmod/block/LemonSaplingBlock.java",
+          "src/main/java/com/darksmp/upgradesmpmod/world/features/plants/LemonSaplingFeature.java",
+          "src/main/resources/assets/upgradesmpmod/models/block/lemon_sapling.json"
+        ]
+      },
+      "path": "~/Crops/Lemon"
+    },
+    {
+      "name": "LemonSaplingOld",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lemon_sapling_old",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/upgradesmpmod/blockstates/lemon_sapling_old.json",
+          "src/main/java/com/darksmp/upgradesmpmod/block/LemonSaplingOldBlock.java",
+          "src/main/resources/assets/upgradesmpmod/models/item/lemon_sapling_old.json",
+          "src/main/resources/assets/upgradesmpmod/models/block/lemon_sapling_old.json"
+        ]
+      },
+      "path": "~/Crops/Lemon"
+    },
+    {
+      "name": "Lemon",
+      "type": "item",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lemon",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/item/LemonItem.java",
+          "src/main/resources/assets/upgradesmpmod/models/item/lemon.json"
+        ]
+      },
+      "path": "~/Crops/Lemon"
+    },
+    {
+      "name": "LemonLeavesOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lemon_leaves_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/procedures/LemonLeavesOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crops/Lemon"
     }
   ],
   "variable_elements": [],
@@ -361,25 +402,36 @@
       ],
       "category": "master",
       "subtitle": "SHIT I SCARE U"
+    },
+    {
+      "name": "bluemf",
+      "files": [
+        "blue"
+      ],
+      "category": "neutral",
+      "subtitle": "YOU ARE NOW BLUE"
     }
   ],
   "language_map": {
     "en_us": {
-      "block.upgradesmpmod.reinforced_iron_ore_2_ore": "Reinforced Iron Ore",
-      "item.upgradesmpmod.reinforced_iron_armor_chestplate": "Reinforced Iron Chestplate",
-      "item.upgradesmpmod.reinforced_iron_armor_helmet": "Reinforced Iron Helmet",
+      "block.upgradesmpmod.reinforced_iron_ore_2_ore": "Reinforced Blue Ore",
+      "item.upgradesmpmod.reinforced_iron_armor_chestplate": "Reinforced Blue Chestplate",
+      "item.upgradesmpmod.reinforced_iron_armor_helmet": "Reinforced Blue Helmet",
       "enchantment.upgradesmpmod.reinfoced_damage": "Reinfoced Damage",
       "block.upgradesmpmod.lemon_leaves": "Lemon Leaves",
-      "item.upgradesmpmod.reinforced_iron_armor_leggings": "Reinforced Iron Leggings",
+      "item.upgradesmpmod.reinforced_iron_armor_leggings": "Reinforced Blue Leggings",
       "subtitles.lemon_planted": "SHIT I SCARE U",
-      "item.upgradesmpmod.reinforcediron": "Reinforced Iron Shard",
+      "item.upgradesmpmod.reinforcediron": "Reinforced Blue Shard",
       "block.upgradesmpmod.lemon_sapling": "Lemon Sapling",
-      "itemGroup.upgradesmpmod.allitems": "All Upgrade SMP Items",
+      "itemGroup.upgradesmpmod.allitems": "ALLITEMS",
       "item.upgradesmpmod.lemon_seeds": "Lemon Seeds",
       "advancements.welcometohell.title": "Welcome to HELL",
-      "advancements.welcometohell.descr": "Welcome to the Upgrade SMP. You got this achievement because you joined HELL.",
-      "item.upgradesmpmod.reinforced_iron_armor_boots": "Reinforced Iron Boots",
-      "block.upgradesmpmod.fuckin_lilac": "Fuckin Lilac"
+      "advancements.welcometohell.descr": "Welcome to the Upgrade SMP. You got this achievement because uyou joined HELL.",
+      "subtitles.bluemf": "YOU ARE NOW BLUE",
+      "block.upgradesmpmod.lemon_sapling_old": "Lemon Sapling Old",
+      "item.upgradesmpmod.reinforced_iron_armor_boots": "Reinforced Blue Boots",
+      "block.upgradesmpmod.fuckin_lilac": "Fuckin Lilac",
+      "item.upgradesmpmod.lemon": "Lemon"
     }
   },
   "foldersRoot": {
@@ -397,6 +449,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Ore",
+        "children": []
       }
     ]
   },
@@ -406,14 +462,16 @@
     "version": "1.0.0",
     "author": "adeeb, MCreator",
     "websiteURL": "https://mcreator.net",
-    "license": "Academic Free License v3.0",
+    "license": "MIT License",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "modPicture": "utentsils_painting",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "fabric-1.19.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "com.darksmp.upgradesmpmod",
     "lockBaseModFiles": false
   },
