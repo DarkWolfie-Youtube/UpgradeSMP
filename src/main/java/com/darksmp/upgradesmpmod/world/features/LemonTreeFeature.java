@@ -18,7 +18,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.FeatureUtils;
-import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 import net.minecraft.core.BlockPos;
 
@@ -41,10 +40,7 @@ public class LemonTreeFeature extends Feature<NoneFeatureConfiguration> {
 		return FEATURE;
 	}
 
-	public static final Predicate<BiomeSelectionContext> GENERATE_BIOMES = BiomeSelectors.includeByKey(ResourceKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("dark_forest")),
-			ResourceKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("dark_forest")), ResourceKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("forest")),
-			ResourceKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("birch_forest")), ResourceKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("birch_forest")),
-			ResourceKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("forest")));
+	public static final Predicate<BiomeSelectionContext> GENERATE_BIOMES = BiomeSelectors.all();
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 	private StructureTemplate template = null;
 
