@@ -5,6 +5,7 @@
 package com.darksmp.upgradesmpmod.init;
 
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Registry;
@@ -12,6 +13,7 @@ import net.minecraft.core.Registry;
 import com.darksmp.upgradesmpmod.item.ReinforcedironItem;
 import com.darksmp.upgradesmpmod.item.ReinforcedIronArmorItem;
 import com.darksmp.upgradesmpmod.item.LemonSeedsItem;
+import com.darksmp.upgradesmpmod.item.LemonItem;
 import com.darksmp.upgradesmpmod.UpgradesmpmodMod;
 
 public class UpgradesmpmodModItems {
@@ -23,8 +25,10 @@ public class UpgradesmpmodModItems {
 	public static Item REINFORCED_IRON_ORE_2_ORE;
 	public static Item FUCKIN_LILAC;
 	public static Item LEMON_SEEDS;
-	public static Item LEMON_SAPLING;
 	public static Item LEMON_LEAVES;
+	public static Item LEMON_SAPLING;
+	public static Item LEMON_SAPLING_OLD;
+	public static Item LEMON;
 
 	public static void load() {
 		REINFORCEDIRON = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "reinforcediron"), new ReinforcedironItem());
@@ -36,7 +40,9 @@ public class UpgradesmpmodModItems {
 				new BlockItem(UpgradesmpmodModBlocks.REINFORCED_IRON_ORE_2_ORE, new Item.Properties().tab(UpgradesmpmodModTabs.TAB_ALLITEMS)));
 		FUCKIN_LILAC = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "fuckin_lilac"), new BlockItem(UpgradesmpmodModBlocks.FUCKIN_LILAC, new Item.Properties().tab(UpgradesmpmodModTabs.TAB_ALLITEMS)));
 		LEMON_SEEDS = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "lemon_seeds"), new LemonSeedsItem());
-		LEMON_SAPLING = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "lemon_sapling"), new BlockItem(UpgradesmpmodModBlocks.LEMON_SAPLING, new Item.Properties().tab(UpgradesmpmodModTabs.TAB_ALLITEMS)));
 		LEMON_LEAVES = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "lemon_leaves"), new BlockItem(UpgradesmpmodModBlocks.LEMON_LEAVES, new Item.Properties().tab(UpgradesmpmodModTabs.TAB_ALLITEMS)));
+		LEMON_SAPLING = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "lemon_sapling"), new BlockItem(UpgradesmpmodModBlocks.LEMON_SAPLING, new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
+		LEMON_SAPLING_OLD = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "lemon_sapling_old"), new BlockItem(UpgradesmpmodModBlocks.LEMON_SAPLING_OLD, new Item.Properties().tab(UpgradesmpmodModTabs.TAB_ALLITEMS)));
+		LEMON = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "lemon"), new LemonItem());
 	}
 }

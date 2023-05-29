@@ -7,6 +7,7 @@ package com.darksmp.upgradesmpmod.init;
 import com.darksmp.upgradesmpmod.procedures.ReinforcedIronOre2OreBlockDestroyedByPlayerProcedure;
 import com.darksmp.upgradesmpmod.procedures.LemonStage0UpdateTickProcedure;
 import com.darksmp.upgradesmpmod.procedures.LemonSeedsRightclickedOnBlockProcedure;
+import com.darksmp.upgradesmpmod.procedures.LemonLeavesOnBlockRightClickedProcedure;
 import com.darksmp.upgradesmpmod.procedures.HellAdvancementProcedure;
 import com.darksmp.upgradesmpmod.procedures.EnchantmentDamageProcedure;
 
@@ -18,5 +19,6 @@ public class UpgradesmpmodModProcedures {
 		new LemonSeedsRightclickedOnBlockProcedure();
 		new LemonStage0UpdateTickProcedure();
 		new ReinforcedIronOre2OreBlockDestroyedByPlayerProcedure();
+		new LemonLeavesOnBlockRightClickedProcedure();
 	}
 }

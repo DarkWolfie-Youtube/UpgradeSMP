@@ -2,14 +2,14 @@
   "_fv": 39,
   "_type": "block",
   "definition": {
-    "texture": "maxresdefault.webp2",
+    "texture": "oak_sapling",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 11,
-    "customModelName": "Single texture",
+    "renderType": 12,
+    "customModelName": "Cross model",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -33,31 +33,31 @@
         "subtract": false
       }
     ],
-    "name": "Lemon Leaves",
+    "name": "Lemon Sapling Old",
     "specialInfo": [],
-    "hardness": 0.0,
-    "resistance": 0.0,
+    "hardness": 1.0,
+    "resistance": 10.0,
     "hasGravity": false,
-    "isWaterloggable": true,
+    "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:ALLITEMS"
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:LemonSeeds"
+      "value": ""
     },
     "dropAmount": 1,
-    "useLootTableForDrops": true,
+    "useLootTableForDrops": false,
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "LEAVES"
+      "value": "ROCK"
     },
     "tickRate": 0,
-    "tickRandomly": false,
+    "tickRandomly": true,
     "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {
@@ -79,7 +79,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "AZALEA_LEAVES"
+      "value": "GROUND"
     },
     "breakSound": {
       "value": ""
@@ -100,6 +100,9 @@
     "unbreakable": false,
     "breakHarvestLevel": 1,
     "isBonemealable": false,
+    "onBonemealSuccess": {
+      "name": "LemonStage0UpdateTick"
+    },
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
@@ -117,12 +120,16 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "LemonLeavesOnBlockRightClicked"
+    "onTickUpdate": {
+      "name": "LemonStage0UpdateTick"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "blocksToReplace": [],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.STONE"
+      }
+    ],
     "generationShape": "UNIFORM",
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
