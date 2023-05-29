@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "upgradesmpmod:sunley_logo",
     "upgradesmpmod:utensils"
   ]
 }

@@ -23,7 +23,6 @@ import com.darksmp.upgradesmpmod.init.UpgradesmpmodModProcedures;
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModPaintings;
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModItems;
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModFeatures;
-import com.darksmp.upgradesmpmod.init.UpgradesmpmodModEnchantments;
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModBlocks;
 
 public class UpgradesmpmodMod implements ModInitializer {
@@ -34,8 +33,6 @@ public class UpgradesmpmodMod implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Initializing UpgradesmpmodMod");
 		UpgradesmpmodModTabs.load();
-
-		UpgradesmpmodModEnchantments.load();
 
 		UpgradesmpmodModBlocks.load();
 		UpgradesmpmodModItems.load();

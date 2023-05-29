@@ -27,7 +27,6 @@ public class UpgradesmpmodModItems {
 	public static Item LEMON_SEEDS;
 	public static Item LEMON_LEAVES;
 	public static Item LEMON_SAPLING;
-	public static Item LEMON_SAPLING_OLD;
 	public static Item LEMON;
 
 	public static void load() {
@@ -42,7 +41,6 @@ public class UpgradesmpmodModItems {
 		LEMON_SEEDS = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "lemon_seeds"), new LemonSeedsItem());
 		LEMON_LEAVES = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "lemon_leaves"), new BlockItem(UpgradesmpmodModBlocks.LEMON_LEAVES, new Item.Properties().tab(UpgradesmpmodModTabs.TAB_ALLITEMS)));
 		LEMON_SAPLING = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "lemon_sapling"), new BlockItem(UpgradesmpmodModBlocks.LEMON_SAPLING, new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
-		LEMON_SAPLING_OLD = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "lemon_sapling_old"), new BlockItem(UpgradesmpmodModBlocks.LEMON_SAPLING_OLD, new Item.Properties().tab(UpgradesmpmodModTabs.TAB_ALLITEMS)));
 		LEMON = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "lemon"), new LemonItem());
 	}
 }
