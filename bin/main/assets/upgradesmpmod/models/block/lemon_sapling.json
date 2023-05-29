@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "upgradesmpmod:blocks/oak_sapling",
+    "particle": "upgradesmpmod:blocks/oak_sapling"
+  }
+}

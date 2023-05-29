@@ -1,0 +1,10 @@
+{
+  "group": "bruh_1",
+  "type": "minecraft:blasting",
+  "experience": 88,
+  "cookingtime": 500,
+  "ingredient": {
+    "item": "upgradesmpmod:reinforced_iron_ore_2_ore"
+  },
+  "result": "upgradesmpmod:reinforcediron"
+}
