@@ -18,7 +18,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.FeatureUtils;
-import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 import net.minecraft.core.BlockPos;
 
@@ -41,10 +40,7 @@ public class LemonTreeFeature extends Feature<NoneFeatureConfiguration> {
 		return FEATURE;
 	}
 
-	public static final Predicate<BiomeSelectionContext> GENERATE_BIOMES = BiomeSelectors.includeByKey(ResourceKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("dark_forest")),
-			ResourceKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("dark_forest")), ResourceKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("forest")),
-			ResourceKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("birch_forest")), ResourceKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("birch_forest")),
-			ResourceKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("forest")));
+	public static final Predicate<BiomeSelectionContext> GENERATE_BIOMES = BiomeSelectors.all();
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 	private StructureTemplate template = null;
 
@@ -61,15 +57,15 @@ public class LemonTreeFeature extends Feature<NoneFeatureConfiguration> {
 		if (template == null)
 			return false;
 		boolean anyPlaced = false;
-		if ((context.random().nextInt(1000000) + 1) <= 10000) {
-			int count = context.random().nextInt(1) + 1;
+		if ((context.random().nextInt(1000000) + 1) <= 9895) {
+			int count = context.random().nextInt(16) + 1;
 			for (int a = 0; a < count; a++) {
 				int i = context.origin().getX() + context.random().nextInt(16);
 				int k = context.origin().getZ() + context.random().nextInt(16);
-				int j = context.level().getHeight(Heightmap.Types.OCEAN_FLOOR_WG, i, k) - 1;
+				int j = context.level().getHeight(Heightmap.Types.WORLD_SURFACE_WG, i, k) - 1;
 				BlockPos spawnTo = new BlockPos(i + 0, j + 0, k + 0);
-				if (template.placeInWorld(context.level(), spawnTo, spawnTo, new StructurePlaceSettings().setMirror(Mirror.values()[context.random().nextInt(2)]).setRotation(Rotation.values()[context.random().nextInt(3)]).setRandom(context.random())
-						.addProcessor(BlockIgnoreProcessor.STRUCTURE_BLOCK).setIgnoreEntities(false), context.random(), 2)) {
+				if (template.placeInWorld(context.level(), spawnTo, spawnTo,
+						new StructurePlaceSettings().setMirror(Mirror.NONE).setRotation(Rotation.NONE).setRandom(context.random()).addProcessor(BlockIgnoreProcessor.STRUCTURE_BLOCK).setIgnoreEntities(false), context.random(), 2)) {
 					anyPlaced = true;
 				}
 			}

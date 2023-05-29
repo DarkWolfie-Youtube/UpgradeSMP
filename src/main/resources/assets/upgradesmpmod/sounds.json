@@ -8,5 +8,15 @@
         "stream": false
       }
     ]
+  },
+  "bluemf": {
+    "category": "neutral",
+    "subtitle": "subtitles.bluemf",
+    "sounds": [
+      {
+        "name": "upgradesmpmod:blue",
+        "stream": false
+      }
+    ]
   }
 }

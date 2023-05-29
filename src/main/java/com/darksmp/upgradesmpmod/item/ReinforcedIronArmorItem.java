@@ -13,6 +13,7 @@ import net.fabricmc.api.Environment;
 import net.fabricmc.api.EnvType;
 
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModTabs;
+import com.darksmp.upgradesmpmod.init.UpgradesmpmodModSounds;
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModItems;
 
 public abstract class ReinforcedIronArmorItem extends ArmorItem {
@@ -20,7 +21,7 @@ public abstract class ReinforcedIronArmorItem extends ArmorItem {
 		super(new ArmorMaterial() {
 			@Override
 			public int getDurabilityForSlot(EquipmentSlot slot) {
-				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 25;
+				return new int[]{13, 15, 16, 11}[slot.getIndex()] * 30;
 			}
 
 			@Override
@@ -30,12 +31,12 @@ public abstract class ReinforcedIronArmorItem extends ArmorItem {
 
 			@Override
 			public int getEnchantmentValue() {
-				return 9;
+				return 35;
 			}
 
 			@Override
 			public SoundEvent getEquipSound() {
-				return null;
+				return UpgradesmpmodModSounds.BLUEMF;
 			}
 
 			@Override
@@ -51,7 +52,7 @@ public abstract class ReinforcedIronArmorItem extends ArmorItem {
 
 			@Override
 			public float getToughness() {
-				return 5f;
+				return 5.199999999999999f;
 			}
 
 			@Override
