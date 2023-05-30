@@ -315,6 +315,19 @@
         ]
       },
       "path": "~/Crops/Lemon"
+    },
+    {
+      "name": "BadMods",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bad_mods",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/world/inventory/BadModsMenu.java",
+          "src/main/java/com/darksmp/upgradesmpmod/client/gui/BadModsScreen.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -339,9 +352,11 @@
   "language_map": {
     "en_us": {
       "block.upgradesmpmod.reinforced_iron_ore_2_ore": "Reinforced Blue Ore",
+      "gui.upgradesmpmod.bad_mods.label_one_of_the_3_mods_listed_below_a": "One of the 3 mods listed below are not allowed.",
       "item.upgradesmpmod.reinforced_iron_armor_chestplate": "Reinforced Blue Chestplate",
       "item.upgradesmpmod.reinforced_iron_armor_helmet": "Reinforced Blue Helmet",
       "block.upgradesmpmod.lemon_leaves": "Lemon Leaves",
+      "gui.upgradesmpmod.bad_mods.label_please_remove_these_mods": "Please Remove these mods.",
       "item.upgradesmpmod.reinforced_iron_armor_leggings": "Reinforced Blue Leggings",
       "subtitles.lemon_planted": "SHIT I SCARE U",
       "item.upgradesmpmod.reinforcediron": "Reinforced Blue Shard",
@@ -349,7 +364,9 @@
       "itemGroup.upgradesmpmod.allitems": "ALLITEMS",
       "item.upgradesmpmod.lemon_seeds": "Lemon Seeds",
       "advancements.welcometohell.title": "Welcome to HELL",
+      "gui.upgradesmpmod.bad_mods.label_xaerominimap_xaeroworldmap_jou": "xaerominimap, xaeroworldmap, journeymap",
       "advancements.welcometohell.descr": "Welcome to the Upgrade SMP. You got this achievement because uyou joined HELL.",
+      "gui.upgradesmpmod.bad_mods.label_empty": "The Current Game is not allowed!",
       "subtitles.bluemf": "YOU ARE NOW BLUE",
       "item.upgradesmpmod.reinforced_iron_armor_boots": "Reinforced Blue Boots",
       "block.upgradesmpmod.fuckin_lilac": "Fuckin Lilac",
