@@ -267,17 +267,6 @@
       "path": "~/Crops/Lemon"
     },
     {
-      "name": "SunleyLogo",
-      "type": "painting",
-      "sortid": 25,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "sunley_logo",
-      "metadata": {
-        "files": []
-      }
-    },
-    {
       "name": "Lemon",
       "type": "item",
       "sortid": 27,
@@ -315,6 +304,17 @@
         ]
       },
       "path": "~/Crops/Lemon"
+    },
+    {
+      "name": "SunleyLogo",
+      "type": "painting",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sunley_logo",
+      "metadata": {
+        "files": []
+      }
     }
   ],
   "variable_elements": [],

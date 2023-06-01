@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "id": "upgradesmpmod",
   "version": "1.0.1",
-  "name": "Upgrade SMP",
-  "description": "The Official Mod for the Upgrade SMP",
+  "name": "Upgrade SMP mod",
+  "description": "The official mod of the UpgradeSMP",
   "authors": [
-    "DarkWoflie"
+    "DarkWolfie"
   ],
   "contact": {
-    "homepage": "https://darksmp.com ",
-    "sources": "https://github.com/DarkWolfie-Youtube/UpgradeSMP"
+    "homepage": "https://darksmp.com/",
+    "sources": ""
   },
   "license": "MIT License",
   "icon": "assets/upgradesmpmod/icon.png",
@@ -27,11 +27,6 @@
     "fabric": "*",
     "minecraft": "~1.19",
     "java": ">=17"
-  },
-  "breaks":{
-    "xaerominimap": "*",
-    "xaeroworldmap": "*",
-    "xaerominimapfair": "*"
   },
   "mixins": [
     "upgradesmpmod.mixins.json"
