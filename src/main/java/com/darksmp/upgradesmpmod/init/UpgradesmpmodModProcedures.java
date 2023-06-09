@@ -6,8 +6,10 @@ package com.darksmp.upgradesmpmod.init;
 
 import com.darksmp.upgradesmpmod.procedures.LemonStage0UpdateTickProcedure;
 import com.darksmp.upgradesmpmod.procedures.LemonSeedsRightclickedOnBlockProcedure;
+import com.darksmp.upgradesmpmod.procedures.LemonSaplingAdditionalGenerationConditionProcedure;
 import com.darksmp.upgradesmpmod.procedures.LemonLeavesOnBlockRightClickedProcedure;
 import com.darksmp.upgradesmpmod.procedures.HellAdvancementProcedure;
+import com.darksmp.upgradesmpmod.procedures.GlowSwordLivingEntityIsHitWithToolProcedure;
 
 @SuppressWarnings("InstantiationOfUtilityClass")
 public class UpgradesmpmodModProcedures {
@@ -16,5 +18,7 @@ public class UpgradesmpmodModProcedures {
 		new LemonSeedsRightclickedOnBlockProcedure();
 		new LemonStage0UpdateTickProcedure();
 		new LemonLeavesOnBlockRightClickedProcedure();
+		new LemonSaplingAdditionalGenerationConditionProcedure();
+		new GlowSwordLivingEntityIsHitWithToolProcedure();
 	}
 }

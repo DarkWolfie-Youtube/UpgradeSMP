@@ -84,7 +84,11 @@
     "spawnWorldTypes": [
       "Surface"
     ],
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "plains"
+      }
+    ],
     "patchSize": 64,
     "generateAtAnyHeight": false,
     "onTickUpdate": {

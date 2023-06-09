@@ -10,6 +10,11 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Registry;
 
+import com.darksmp.upgradesmpmod.item.ReinforcedirontoolsSwordItem;
+import com.darksmp.upgradesmpmod.item.ReinforcedirontoolsShovelItem;
+import com.darksmp.upgradesmpmod.item.ReinforcedirontoolsPickaxeItem;
+import com.darksmp.upgradesmpmod.item.ReinforcedirontoolsHoeItem;
+import com.darksmp.upgradesmpmod.item.ReinforcedirontoolsAxeItem;
 import com.darksmp.upgradesmpmod.item.ReinforcedironItem;
 import com.darksmp.upgradesmpmod.item.ReinforcedIronArmorItem;
 import com.darksmp.upgradesmpmod.item.LemonSeedsItem;
@@ -28,6 +33,12 @@ public class UpgradesmpmodModItems {
 	public static Item LEMON_LEAVES;
 	public static Item LEMON_SAPLING;
 	public static Item LEMON;
+	public static Item REINFORCEDIRONTOOLS_AXE;
+	public static Item REINFORCEDIRONTOOLS_PICKAXE;
+	public static Item REINFORCEDIRONTOOLS_SWORD;
+	public static Item REINFORCEDIRONTOOLS_SHOVEL;
+	public static Item REINFORCEDIRONTOOLS_HOE;
+	public static Item GLOW_SWORD;
 
 	public static void load() {
 		REINFORCEDIRON = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "reinforcediron"), new ReinforcedironItem());
@@ -42,5 +53,11 @@ public class UpgradesmpmodModItems {
 		LEMON_LEAVES = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "lemon_leaves"), new BlockItem(UpgradesmpmodModBlocks.LEMON_LEAVES, new Item.Properties().tab(UpgradesmpmodModTabs.TAB_ALLITEMS)));
 		LEMON_SAPLING = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "lemon_sapling"), new BlockItem(UpgradesmpmodModBlocks.LEMON_SAPLING, new Item.Properties().tab(CreativeModeTab.TAB_DECORATIONS)));
 		LEMON = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "lemon"), new LemonItem());
+		REINFORCEDIRONTOOLS_AXE = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "reinforcedirontools_axe"), new ReinforcedirontoolsAxeItem());
+		REINFORCEDIRONTOOLS_PICKAXE = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "reinforcedirontools_pickaxe"), new ReinforcedirontoolsPickaxeItem());
+		REINFORCEDIRONTOOLS_SWORD = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "reinforcedirontools_sword"), new ReinforcedirontoolsSwordItem());
+		REINFORCEDIRONTOOLS_SHOVEL = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "reinforcedirontools_shovel"), new ReinforcedirontoolsShovelItem());
+		REINFORCEDIRONTOOLS_HOE = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "reinforcedirontools_hoe"), new ReinforcedirontoolsHoeItem());
+		GLOW_SWORD = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "glow_sword"), new GlowSwordItem());
 	}
 }

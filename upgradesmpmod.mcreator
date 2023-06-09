@@ -315,6 +315,206 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "ReinforcedirontoolsPickaxe",
+      "type": "tool",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforcedirontools_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/item/ReinforcedirontoolsPickaxeItem.java",
+          "src/main/resources/assets/upgradesmpmod/models/item/reinforcedirontools_pickaxe.json"
+        ]
+      }
+    },
+    {
+      "name": "ReinforcedirontoolsAxe",
+      "type": "tool",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforcedirontools_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/upgradesmpmod/models/item/reinforcedirontools_axe.json",
+          "src/main/java/com/darksmp/upgradesmpmod/item/ReinforcedirontoolsAxeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ReinforcedirontoolsSword",
+      "type": "tool",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforcedirontools_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/item/ReinforcedirontoolsSwordItem.java",
+          "src/main/resources/assets/upgradesmpmod/models/item/reinforcedirontools_sword.json"
+        ]
+      }
+    },
+    {
+      "name": "ReinforcedirontoolsShovel",
+      "type": "tool",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforcedirontools_shovel",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/item/ReinforcedirontoolsShovelItem.java",
+          "src/main/resources/assets/upgradesmpmod/models/item/reinforcedirontools_shovel.json"
+        ]
+      }
+    },
+    {
+      "name": "ReinforcedirontoolsHoe",
+      "type": "tool",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforcedirontools_hoe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/upgradesmpmod/models/item/reinforcedirontools_hoe.json",
+          "src/main/java/com/darksmp/upgradesmpmod/item/ReinforcedirontoolsHoeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Pickblue",
+      "type": "recipe",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pickblue",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/upgradesmpmod/recipes/pickblue.json"
+        ]
+      }
+    },
+    {
+      "name": "Swordblue",
+      "type": "recipe",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swordblue",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/upgradesmpmod/recipes/swordblue.json"
+        ]
+      }
+    },
+    {
+      "name": "Axeblue",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "axeblue",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/upgradesmpmod/recipes/axeblue.json"
+        ]
+      }
+    },
+    {
+      "name": "Hoeblue",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hoeblue",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/upgradesmpmod/recipes/hoeblue.json"
+        ]
+      }
+    },
+    {
+      "name": "Shovelblue",
+      "type": "recipe",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shovelblue",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/upgradesmpmod/recipes/shovelblue.json"
+        ]
+      }
+    },
+    {
+      "name": "LemonSaplingAdditionalGenerationCondition",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lemon_sapling_additional_generation_condition",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/procedures/LemonSaplingAdditionalGenerationConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crops/Lemon"
+    },
+    {
+      "name": "GlowSwordLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glow_sword_living_entity_is_hit_with_tool",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/procedures/GlowSwordLivingEntityIsHitWithToolProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GlowSword",
+      "type": "tool",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glow_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/upgradesmpmod/models/item/glow_sword.json",
+          "src/main/java/com/darksmp/upgradesmpmod/item/GlowSwordItem.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -343,17 +543,23 @@
       "item.upgradesmpmod.reinforced_iron_armor_helmet": "Reinforced Blue Helmet",
       "block.upgradesmpmod.lemon_leaves": "Lemon Leaves",
       "item.upgradesmpmod.reinforced_iron_armor_leggings": "Reinforced Blue Leggings",
+      "item.upgradesmpmod.reinforcedirontools_axe": "Reinforced Blue Axe",
       "subtitles.lemon_planted": "SHIT I SCARE U",
       "item.upgradesmpmod.reinforcediron": "Reinforced Blue Shard",
       "block.upgradesmpmod.lemon_sapling": "Lemon Sapling",
       "itemGroup.upgradesmpmod.allitems": "ALLITEMS",
       "item.upgradesmpmod.lemon_seeds": "Lemon Seeds",
+      "item.upgradesmpmod.reinforcedirontools_pickaxe": "Reinforced Blue Pickaxe",
       "advancements.welcometohell.title": "Welcome to HELL",
-      "advancements.welcometohell.descr": "Welcome to the Upgrade SMP. You got this achievement because uyou joined HELL.",
+      "item.upgradesmpmod.reinforcedirontools_shovel": "Reinforced Blue Shovel",
+      "item.upgradesmpmod.reinforcedirontools_sword": "Reinforced Blue Sword",
+      "advancements.welcometohell.descr": "Welcome to the Upgrade SMP. You got this achievement because you joined HELL.",
       "subtitles.bluemf": "YOU ARE NOW BLUE",
       "item.upgradesmpmod.reinforced_iron_armor_boots": "Reinforced Blue Boots",
+      "item.upgradesmpmod.reinforcedirontools_hoe": "Reinforced Blue Hoe",
       "block.upgradesmpmod.fuckin_lilac": "Fuckin Lilac",
-      "item.upgradesmpmod.lemon": "Lemon"
+      "item.upgradesmpmod.lemon": "Lemon",
+      "item.upgradesmpmod.glow_sword": "Glow Sword"
     }
   },
   "foldersRoot": {

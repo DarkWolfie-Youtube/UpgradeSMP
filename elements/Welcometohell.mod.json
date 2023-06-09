@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Welcome to HELL",
-    "achievementDescription": "Welcome to the Upgrade SMP. You got this achievement because uyou joined HELL.",
+    "achievementDescription": "Welcome to the Upgrade SMP. You got this achievement because you joined HELL.",
     "achievementIcon": {
       "value": "CUSTOM:Reinforcediron"
     },
