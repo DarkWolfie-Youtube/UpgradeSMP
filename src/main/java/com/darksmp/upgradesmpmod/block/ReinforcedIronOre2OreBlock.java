@@ -55,7 +55,7 @@ public class ReinforcedIronOre2OreBlock extends Block {
 	@Override
 	public void playerDestroy(Level world, Player entity, BlockPos pos, BlockState blockstate, BlockEntity blockEntity, ItemStack itemStack) {
 		super.playerDestroy(world, entity, pos, blockstate, blockEntity, itemStack);
-		ReinforcedIronOre2OreBlockDestroyedByPlayerProcedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("x", pos.getX()).put("y", pos.getY()).put("z", pos.getZ()).put("world", world).put("entity", entity).build());
+		ReinforcedIronOre2OreBlockDestroyedByPlayerProcedure.execute(com.google.common.collect.ImmutableMap.<String, Object>builder().put("entity", entity).build());
 	}
 
 	@Environment(EnvType.CLIENT)

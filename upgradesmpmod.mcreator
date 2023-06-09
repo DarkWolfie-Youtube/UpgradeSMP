@@ -45,7 +45,7 @@
       "name": "ReinforcedIronOre2Ore",
       "type": "block",
       "sortid": 4,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "reinforced_iron_ore_2_ore",
       "metadata": {
@@ -513,6 +513,25 @@
         "files": [
           "src/main/resources/assets/upgradesmpmod/models/item/glow_sword.json",
           "src/main/java/com/darksmp/upgradesmpmod/item/GlowSwordItem.java"
+        ]
+      }
+    },
+    {
+      "name": "ReinforcedIronOre2OreBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reinforced_iron_ore_2_ore_block_destroyed_by_player",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/procedures/ReinforcedIronOre2OreBlockDestroyedByPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
         ]
       }
     }

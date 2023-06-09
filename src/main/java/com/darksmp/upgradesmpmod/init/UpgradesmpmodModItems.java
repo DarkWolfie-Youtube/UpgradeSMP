@@ -19,6 +19,7 @@ import com.darksmp.upgradesmpmod.item.ReinforcedironItem;
 import com.darksmp.upgradesmpmod.item.ReinforcedIronArmorItem;
 import com.darksmp.upgradesmpmod.item.LemonSeedsItem;
 import com.darksmp.upgradesmpmod.item.LemonItem;
+import com.darksmp.upgradesmpmod.item.GlowSwordItem;
 import com.darksmp.upgradesmpmod.UpgradesmpmodMod;
 
 public class UpgradesmpmodModItems {
