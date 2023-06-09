@@ -3,7 +3,7 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "reinforcedirontools_sword",
+    "texture": "glow_sword",
     "customModelName": "Normal",
     "name": "Glow Sword",
     "specialInfo": [],

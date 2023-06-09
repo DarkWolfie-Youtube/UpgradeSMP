@@ -4,6 +4,7 @@
  */
 package com.darksmp.upgradesmpmod.init;
 
+import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
@@ -40,6 +41,8 @@ public class UpgradesmpmodModItems {
 	public static Item REINFORCEDIRONTOOLS_SHOVEL;
 	public static Item REINFORCEDIRONTOOLS_HOE;
 	public static Item GLOW_SWORD;
+	public static Item MY_CREEPER_SPAWN_EGG;
+	public static Item SHITSKELE_SPAWN_EGG;
 
 	public static void load() {
 		REINFORCEDIRON = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "reinforcediron"), new ReinforcedironItem());
@@ -60,5 +63,8 @@ public class UpgradesmpmodModItems {
 		REINFORCEDIRONTOOLS_SHOVEL = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "reinforcedirontools_shovel"), new ReinforcedirontoolsShovelItem());
 		REINFORCEDIRONTOOLS_HOE = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "reinforcedirontools_hoe"), new ReinforcedirontoolsHoeItem());
 		GLOW_SWORD = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "glow_sword"), new GlowSwordItem());
+		MY_CREEPER_SPAWN_EGG = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "my_creeper_spawn_egg"),
+				new SpawnEggItem(UpgradesmpmodModEntities.MY_CREEPER, -3355648, -16751002, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+		SHITSKELE_SPAWN_EGG = Registry.register(Registry.ITEM, new ResourceLocation(UpgradesmpmodMod.MODID, "shitskele_spawn_egg"), new SpawnEggItem(UpgradesmpmodModEntities.SHITSKELE, -1, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	}
 }

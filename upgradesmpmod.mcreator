@@ -45,7 +45,7 @@
       "name": "ReinforcedIronOre2Ore",
       "type": "block",
       "sortid": 4,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "reinforced_iron_ore_2_ore",
       "metadata": {
@@ -534,6 +534,74 @@
           }
         ]
       }
+    },
+    {
+      "name": "MyCreeper",
+      "type": "livingentity",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "my_creeper",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/client/renderer/MyCreeperRenderer.java",
+          "src/main/resources/assets/upgradesmpmod/models/item/my_creeper_spawn_egg.json",
+          "src/main/java/com/darksmp/upgradesmpmod/entity/MyCreeperEntity.java"
+        ]
+      },
+      "path": "~/Crops/Lemon"
+    },
+    {
+      "name": "Shitskele",
+      "type": "livingentity",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shitskele",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/client/renderer/ShitskeleRenderer.java",
+          "src/main/java/com/darksmp/upgradesmpmod/entity/ShitskeleEntity.java",
+          "src/main/resources/assets/upgradesmpmod/models/item/shitskele_spawn_egg.json"
+        ]
+      },
+      "path": "~/Crops/Lemon"
+    },
+    {
+      "name": "MyCreeperOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "my_creeper_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/com/darksmp/upgradesmpmod/procedures/MyCreeperOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crops/Lemon"
     }
   ],
   "variable_elements": [],
@@ -557,27 +625,31 @@
   ],
   "language_map": {
     "en_us": {
-      "block.upgradesmpmod.reinforced_iron_ore_2_ore": "Reinforced Blue Ore",
       "item.upgradesmpmod.reinforced_iron_armor_chestplate": "Reinforced Blue Chestplate",
       "item.upgradesmpmod.reinforced_iron_armor_helmet": "Reinforced Blue Helmet",
       "block.upgradesmpmod.lemon_leaves": "Lemon Leaves",
-      "item.upgradesmpmod.reinforced_iron_armor_leggings": "Reinforced Blue Leggings",
       "item.upgradesmpmod.reinforcedirontools_axe": "Reinforced Blue Axe",
-      "subtitles.lemon_planted": "SHIT I SCARE U",
-      "item.upgradesmpmod.reinforcediron": "Reinforced Blue Shard",
       "block.upgradesmpmod.lemon_sapling": "Lemon Sapling",
       "itemGroup.upgradesmpmod.allitems": "ALLITEMS",
       "item.upgradesmpmod.lemon_seeds": "Lemon Seeds",
-      "item.upgradesmpmod.reinforcedirontools_pickaxe": "Reinforced Blue Pickaxe",
       "advancements.welcometohell.title": "Welcome to HELL",
-      "item.upgradesmpmod.reinforcedirontools_shovel": "Reinforced Blue Shovel",
       "item.upgradesmpmod.reinforcedirontools_sword": "Reinforced Blue Sword",
       "advancements.welcometohell.descr": "Welcome to the Upgrade SMP. You got this achievement because you joined HELL.",
       "subtitles.bluemf": "YOU ARE NOW BLUE",
+      "item.upgradesmpmod.shitskele_spawn_egg": "Creeper Spawn Egg",
+      "entity.upgradesmpmod.my_creeper": "Skeleton",
       "item.upgradesmpmod.reinforced_iron_armor_boots": "Reinforced Blue Boots",
       "item.upgradesmpmod.reinforcedirontools_hoe": "Reinforced Blue Hoe",
-      "block.upgradesmpmod.fuckin_lilac": "Fuckin Lilac",
+      "entity.upgradesmpmod.shitskele": "Creeper",
       "item.upgradesmpmod.lemon": "Lemon",
+      "block.upgradesmpmod.reinforced_iron_ore_2_ore": "Reinforced Blue Ore",
+      "item.upgradesmpmod.reinforced_iron_armor_leggings": "Reinforced Blue Leggings",
+      "subtitles.lemon_planted": "SHIT I SCARE U",
+      "item.upgradesmpmod.reinforcediron": "Reinforced Blue Shard",
+      "item.upgradesmpmod.reinforcedirontools_pickaxe": "Reinforced Blue Pickaxe",
+      "item.upgradesmpmod.reinforcedirontools_shovel": "Reinforced Blue Shovel",
+      "item.upgradesmpmod.my_creeper_spawn_egg": "Skeleton Spawn Egg",
+      "block.upgradesmpmod.fuckin_lilac": "Fuckin Lilac",
       "item.upgradesmpmod.glow_sword": "Glow Sword"
     }
   },

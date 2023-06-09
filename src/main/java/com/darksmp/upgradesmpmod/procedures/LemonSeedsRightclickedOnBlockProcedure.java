@@ -12,6 +12,8 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.core.BlockPos;
 
+import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
+
 import java.util.Map;
 
 import com.darksmp.upgradesmpmod.init.UpgradesmpmodModSounds;
@@ -85,6 +87,19 @@ public class LemonSeedsRightclickedOnBlockProcedure {
 						_level.playLocalSound(x, y, z, UpgradesmpmodModSounds.LEMON_PLANTED, SoundSource.MASTER, 1, 1, false);
 					}
 				}
+				new Object() {
+					private int ticks = 0;
+
+					public void startDelay(LevelAccessor world) {
+						ServerTickEvents.END_SERVER_TICK.register((server) -> {
+							this.ticks++;
+							if (this.ticks == 60) {
+
+								return;
+							}
+						});
+					}
+				}.startDelay(world);
 				isRunning = "false";
 			}
 		}
